@@ -71,18 +71,30 @@ interface ArtworkModalContextType {
   selectedArtwork: Artwork | null
   openModal: (artwork: Artwork) => void
   closeModal: () => void
+  heroArtwork: Artwork
+  selectHeroArtwork: (artwork: Artwork) => void
 }
 
 const ArtworkModalContext = createContext<ArtworkModalContextType | undefined>(undefined)
 
 export function ArtworkModalProvider({ children }: { children: ReactNode }) {
   const [selectedArtwork, setSelectedArtwork] = useState<Artwork | null>(null)
+  const [heroArtwork, setHeroArtwork] = useState<Artwork>(artworks[0])
 
   const openModal = (artwork: Artwork) => setSelectedArtwork(artwork)
   const closeModal = () => setSelectedArtwork(null)
 
+  const selectHeroArtwork = (artwork: Artwork) => {
+    setHeroArtwork(artwork)
+    // MODIFICATION: Scroll to the gallery's featured section
+    document.getElementById('gallery-featured-section')?.scrollIntoView({
+      behavior: 'smooth',
+      block: 'start',
+    })
+  }
+
   return (
-    <ArtworkModalContext.Provider value={{ selectedArtwork, openModal, closeModal }}>
+    <ArtworkModalContext.Provider value={{ selectedArtwork, openModal, closeModal, heroArtwork, selectHeroArtwork }}>
       {children}
     </ArtworkModalContext.Provider>
   )
