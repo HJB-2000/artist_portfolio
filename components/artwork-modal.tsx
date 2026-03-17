@@ -9,7 +9,7 @@ export function ArtworkModal() {
 
   return (
     <Dialog open={!!selectedArtwork} onOpenChange={() => closeModal()}>
-      <DialogContent className="max-w-[98vw] w-[1600px] max-h-[95vh] overflow-y-auto p-0 bg-card border-primary/30">
+      <DialogContent className="max-w-[98vw] w-[1800px] max-h-[95vh] overflow-y-auto p-0 bg-card border-primary/30 shadow-[0_0_80px_-20px_rgba(212,175,85,0.3)]">
         <DialogTitle className="sr-only">
           Request Private View - {selectedArtwork?.title ?? "Artwork"}
         </DialogTitle>
@@ -17,10 +17,10 @@ export function ArtworkModal() {
           Request a private viewing for this artwork
         </DialogDescription>
         {selectedArtwork && (
-          <div className="grid lg:grid-cols-[1.2fr_1fr]">
+          <div className="grid lg:grid-cols-[1.4fr_1fr]">
             {/* Artwork Preview - Left Side (Larger) */}
             <div className="relative">
-              <div className="relative aspect-[4/5] lg:aspect-auto lg:h-full lg:min-h-[750px]">
+              <div className="relative aspect-[4/5] lg:aspect-auto lg:h-full lg:min-h-[800px]">
                 <Image
                   src={selectedArtwork.image}
                   alt={selectedArtwork.title}

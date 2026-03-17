@@ -29,30 +29,30 @@ export function Hero() {
     const diff = (index - currentIndex + artworks.length) % artworks.length
     
     if (diff === 0) {
-      // Front card - prominent
+      // Front card - prominent with dramatic presence
       return {
-        transform: "translateX(0) translateY(0) scale(1) rotateY(0deg)",
+        transform: "translateX(0) translateY(0) scale(1) rotateY(0deg) rotateX(0deg)",
         zIndex: 30,
         opacity: 1,
       }
     } else if (diff === 1) {
-      // Second card - more spacing
+      // Second card - cascading depth effect
       return {
-        transform: "translateX(100px) translateY(20px) scale(0.88) rotateY(-10deg)",
+        transform: "translateX(120px) translateY(25px) scale(0.9) rotateY(-12deg) rotateX(2deg)",
         zIndex: 20,
-        opacity: 0.75,
+        opacity: 0.8,
       }
     } else if (diff === 2) {
-      // Third card
+      // Third card - deeper cascade
       return {
-        transform: "translateX(190px) translateY(40px) scale(0.76) rotateY(-15deg)",
+        transform: "translateX(230px) translateY(50px) scale(0.8) rotateY(-18deg) rotateX(4deg)",
         zIndex: 10,
-        opacity: 0.5,
+        opacity: 0.55,
       }
     } else {
       // Hidden cards
       return {
-        transform: "translateX(270px) translateY(60px) scale(0.64) rotateY(-20deg)",
+        transform: "translateX(330px) translateY(75px) scale(0.7) rotateY(-22deg) rotateX(6deg)",
         zIndex: 0,
         opacity: 0,
       }
@@ -109,22 +109,22 @@ export function Hero() {
           
           {/* Card Stack */}
           <div 
-            className="relative w-full max-w-lg lg:max-w-xl xl:max-w-2xl h-[450px] sm:h-[500px] md:h-[550px] lg:h-[600px]"
-            style={{ perspective: '1500px' }}
+            className="relative w-full max-w-xl lg:max-w-2xl xl:max-w-3xl h-[520px] sm:h-[580px] md:h-[650px] lg:h-[720px]"
+            style={{ perspective: '2000px' }}
             onMouseEnter={() => setIsPaused(true)}
             onMouseLeave={() => setIsPaused(false)}
           >
             {artworks.map((artwork, index) => (
               <div
                 key={artwork.id}
-                className="absolute left-0 sm:left-4 lg:left-8 top-0 w-[280px] sm:w-[320px] md:w-[360px] lg:w-[400px] transition-all duration-700 ease-out cursor-pointer group"
+                className="absolute left-0 sm:left-4 lg:left-8 top-0 w-[320px] sm:w-[380px] md:w-[420px] lg:w-[480px] transition-all duration-700 ease-out cursor-pointer group"
                 style={{
                   ...getCardStyle(index),
                   transformStyle: "preserve-3d",
                 }}
                 onClick={() => handleCardClick(index)}
               >
-                <div className="bg-card/95 backdrop-blur-sm rounded-2xl overflow-hidden border border-primary/30 shadow-[0_35px_80px_-15px_rgba(0,0,0,0.7),0_0_40px_-10px_rgba(212,175,85,0.2)] group-hover:shadow-[0_35px_80px_-15px_rgba(0,0,0,0.7),0_0_60px_-10px_rgba(212,175,85,0.4)] transition-shadow duration-300">
+                <div className="bg-card/95 backdrop-blur-md rounded-3xl overflow-hidden border-2 border-primary/40 shadow-[0_50px_100px_-20px_rgba(0,0,0,0.8),0_0_60px_-15px_rgba(212,175,85,0.3),inset_0_1px_0_rgba(255,255,255,0.1)] group-hover:shadow-[0_60px_120px_-20px_rgba(0,0,0,0.85),0_0_80px_-15px_rgba(212,175,85,0.5),inset_0_1px_0_rgba(255,255,255,0.15)] group-hover:border-primary/60 transition-all duration-500">
                   <div className="relative aspect-[4/5] overflow-hidden">
                     <Image
                       src={artwork.image}
@@ -133,22 +133,24 @@ export function Hero() {
                       className="object-cover transition-transform duration-700 group-hover:scale-110"
                     />
                     {/* Inner glow effect */}
-                    <div className="absolute inset-0 shadow-[inset_0_0_60px_rgba(0,0,0,0.4)]" />
+                    <div className="absolute inset-0 shadow-[inset_0_0_80px_rgba(0,0,0,0.5)]" />
                     {/* Gradient overlay */}
                     <div className="absolute inset-0 bg-gradient-to-t from-card via-transparent to-transparent" />
+                    {/* Dramatic top highlight */}
+                    <div className="absolute inset-x-0 top-0 h-1/3 bg-gradient-to-b from-white/5 to-transparent" />
                     {/* Click hint overlay for front card */}
                     {index === currentIndex && (
                       <div className="absolute inset-0 flex items-center justify-center bg-background/0 group-hover:bg-background/30 transition-colors duration-300">
-                        <span className="opacity-0 group-hover:opacity-100 transition-opacity duration-300 text-foreground text-sm tracking-widest uppercase bg-card/80 px-4 py-2 rounded backdrop-blur-sm">
+                        <span className="opacity-0 group-hover:opacity-100 transition-opacity duration-300 text-foreground text-sm tracking-widest uppercase bg-card/90 px-6 py-3 rounded-lg backdrop-blur-md shadow-lg border border-primary/30">
                           View Details
                         </span>
                       </div>
                     )}
                   </div>
-                  <div className="p-5 sm:p-6 bg-gradient-to-b from-card to-card/90">
+                  <div className="p-6 sm:p-8 bg-gradient-to-b from-card to-card/95">
                     <div className="flex items-center justify-between gap-4">
-                      <h3 className="font-serif text-xl sm:text-2xl text-foreground">{artwork.title}</h3>
-                      <span className="text-lg sm:text-xl font-semibold text-primary drop-shadow-[0_0_10px_rgba(212,175,85,0.5)]">{artwork.price}</span>
+                      <h3 className="font-serif text-2xl sm:text-3xl text-foreground">{artwork.title}</h3>
+                      <span className="text-xl sm:text-2xl font-semibold text-primary drop-shadow-[0_0_15px_rgba(212,175,85,0.6)]">{artwork.price}</span>
                     </div>
                   </div>
                 </div>
