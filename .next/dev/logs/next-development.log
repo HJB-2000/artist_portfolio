@@ -1,6 +1,31 @@
-[00:00:02.925] Server  LOG     ✓ Ready in 2.6s
-[00:00:06.852] Server  LOG     ○ Compiling / ...
-[00:00:11.855] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:00:12.230] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
-[00:00:12.230] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/","route":"/"}
-[00:00:12.230] Browser LOG     %c[Vercel Web Analytics]%c [view] http://localhost:3000/ color: rgb(120, 120, 120) color: inherit {"dp":"/","o":"http://localhost:3000/","sdkn":"@vercel/analytics/next","sdkv":"1.6.1","sv":"0.1.3","ts":1773713744192} /_vercel/insights/view
+[00:00:00.602] Server  LOG     ✓ Ready in 369ms
+[00:00:03.433] Server  WARN    ⚠ Cross origin request detected from 3000-firebase-artistportfoliogit-1773715356348.cluster-ikslh4rdsnbqsvu5nw3v4dqjj2.cloudworkstations.dev to /_next/* resource. In a future major version of Next.js, you will need to explicitly configure "allowedDevOrigins" in next.config to allow this.
+Read more: https://nextjs.org/docs/app/api-reference/config/next-config-js/allowedDevOrigins
+[00:00:03.504] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:00:03.633] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
+[00:00:03.633] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/","route":"/"}
+[00:00:03.633] Browser LOG     %c[Vercel Web Analytics]%c [view] https://3000-firebase-artistportfoliogit-1773715356348.cluster-ikslh4rdsnbqsvu5nw3v4dqjj2.cloudworkstations.dev/ color: rgb(120, 120, 120) color: inherit {"dp":"/","o":"https://3000-firebase-artistportfoliogit-1773715356348.cluster-ikslh4rdsnbqsvu5nw3v4dqjj2.cloudworkstations.dev/","r":"https://firebase-artistportfoliogit-1773715356348.cluster-ikslh4rdsnbqsvu5nw3v4dqjj2.cloudworkstations.dev/","sdkn":"@vercel/analytics/next","sdkv":"1.6.1","sv":"0.1.3","ts":1773718438165} /_vercel/insights/view
+[00:00:05.423] Browser ERROR   `DialogContent` requires a `DialogTitle` for the component to be accessible for screen reader users.
+
+If you want to hide the `DialogTitle`, you can wrap it with our VisuallyHidden component.
+
+For more information, see https://radix-ui.com/primitives/docs/components/dialog
+[00:00:05.423] Browser WARN    Warning: Missing `Description` or `aria-describedby={undefined}` for {DialogContent}.
+[00:00:05.423] Browser ERROR   `DialogContent` requires a `DialogTitle` for the component to be accessible for screen reader users.
+
+If you want to hide the `DialogTitle`, you can wrap it with our VisuallyHidden component.
+
+For more information, see https://radix-ui.com/primitives/docs/components/dialog
+[00:00:05.423] Browser WARN    Warning: Missing `Description` or `aria-describedby={undefined}` for {DialogContent}.
+[00:00:23.145] Server  LOG     
+[00:00:23.145] Server  LOG     Could not open dialog.tsx in the editor.
+[00:00:23.146] Server  LOG     The editor process exited with an error: Terminal editors can only be used on macOS.
+[00:00:23.146] Server  LOG     
+[00:00:23.146] Server  LOG     To set up the editor integration, add something like REACT_EDITOR=atom to the .env.local file in your project folder and restart the development server.
+[00:00:23.146] Server  LOG     
+[00:00:25.407] Server  LOG     
+[00:00:25.407] Server  LOG     Could not open dialog.tsx in the editor.
+[00:00:25.407] Server  LOG     The editor process exited with an error: Terminal editors can only be used on macOS.
+[00:00:25.407] Server  LOG     
+[00:00:25.407] Server  LOG     To set up the editor integration, add something like REACT_EDITOR=atom to the .env.local file in your project folder and restart the development server.
+[00:00:25.408] Server  LOG     
