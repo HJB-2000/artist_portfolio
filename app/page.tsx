@@ -7,6 +7,7 @@ import { Contact } from "@/components/contact"
 import { Footer } from "@/components/footer"
 import { ArtworkModalProvider } from "@/components/artwork-modal-context"
 import { ArtworkModal } from "@/components/artwork-modal"
+import { ItemImagesModal } from "@/components/item-images-modal"
 
 export default function Home() {
   return (
@@ -20,6 +21,7 @@ export default function Home() {
         <Contact />
         <Footer />
         <ArtworkModal />
+        <ItemImagesModal />
       </main>
     </ArtworkModalProvider>
   )

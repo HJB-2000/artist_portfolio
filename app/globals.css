@@ -124,3 +124,323 @@
     @apply bg-background text-foreground;
   }
 }
+
+@keyframes cosmosDrift {
+  0% {
+    transform: translate3d(0, 0, 0) scale(1);
+  }
+  50% {
+    transform: translate3d(-2%, 2%, 0) scale(1.02);
+  }
+  100% {
+    transform: translate3d(2%, -1%, 0) scale(1);
+  }
+}
+
+@keyframes sparkFloat {
+  0% {
+    transform: translate3d(0, 0, 0);
+    opacity: 0.35;
+  }
+  50% {
+    transform: translate3d(-1.5%, -2%, 0);
+    opacity: 0.65;
+  }
+  100% {
+    transform: translate3d(2%, 1%, 0);
+    opacity: 0.4;
+  }
+}
+
+@keyframes sparkPulse {
+  0%,
+  100% {
+    opacity: 0.25;
+    filter: blur(0);
+  }
+  50% {
+    opacity: 0.8;
+    filter: blur(0.4px);
+  }
+}
+
+@keyframes sparkWander {
+  0% {
+    transform: translate3d(0, -24px, 0) scale(0.72);
+  }
+  25% {
+    transform: translate3d(calc(var(--dx) * -0.35), calc(var(--dy) * 0.26), 0) scale(0.9);
+  }
+  50% {
+    transform: translate3d(calc(var(--dx) * 0.24), calc(var(--dy) * 0.56), 0) scale(1.04);
+  }
+  75% {
+    transform: translate3d(calc(var(--dx) * -0.12), calc(var(--dy) * 0.82), 0) scale(0.94);
+  }
+  100% {
+    transform: translate3d(var(--dx), var(--dy), 0) scale(1.06);
+  }
+}
+
+@keyframes shootingDash {
+  0% {
+    opacity: 0;
+    transform: translate3d(-20px, -16px, 0) rotate(var(--shoot-angle)) scaleX(0.68);
+  }
+  5% {
+    opacity: 0.86;
+  }
+  10% {
+    opacity: 0.56;
+    transform: translate3d(165px, 86px, 0) rotate(var(--shoot-angle)) scaleX(1);
+  }
+  14% {
+    opacity: 0;
+    transform: translate3d(255px, 138px, 0) rotate(var(--shoot-angle)) scaleX(0.9);
+  }
+  100% {
+    opacity: 0;
+    transform: translate3d(255px, 138px, 0) rotate(var(--shoot-angle)) scaleX(0.9);
+  }
+}
+
+@keyframes aboutHaloDrift {
+  0% {
+    transform: translate3d(-2%, 0, 0) scale(1);
+    opacity: 0.32;
+  }
+  50% {
+    transform: translate3d(2%, -2%, 0) scale(1.06);
+    opacity: 0.48;
+  }
+  100% {
+    transform: translate3d(-1%, 2%, 0) scale(1.01);
+    opacity: 0.36;
+  }
+}
+
+@keyframes aboutPortraitFloat {
+  0% {
+    transform: translateY(0px) scale(1);
+  }
+  50% {
+    transform: translateY(-9px) scale(1.01);
+  }
+  100% {
+    transform: translateY(0px) scale(1);
+  }
+}
+
+@keyframes aboutFramePulse {
+  0%,
+  100% {
+    opacity: 0.55;
+    box-shadow: 0 0 0 rgba(212, 175, 85, 0);
+  }
+  50% {
+    opacity: 1;
+    box-shadow: 0 0 35px rgba(212, 175, 85, 0.22);
+  }
+}
+
+@keyframes aboutStatRise {
+  0%,
+  100% {
+    transform: translateY(0);
+    opacity: 0.92;
+  }
+  50% {
+    transform: translateY(-4px);
+    opacity: 1;
+  }
+}
+
+@keyframes aboutStardustTwinkle {
+  0%,
+  100% {
+    opacity: 0.5;
+  }
+  50% {
+    opacity: 0.9;
+  }
+}
+
+@keyframes aboutHeadingGlow {
+  0%,
+  100% {
+    text-shadow: 0 0 0 rgba(212, 175, 85, 0);
+  }
+  50% {
+    text-shadow: 0 0 26px rgba(212, 175, 85, 0.42);
+  }
+}
+
+@keyframes aboutSheenSweep {
+  0% {
+    transform: translateX(-130%) skewX(-15deg);
+    opacity: 0;
+  }
+  12% {
+    opacity: 0.65;
+  }
+  30% {
+    transform: translateX(130%) skewX(-15deg);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(130%) skewX(-15deg);
+    opacity: 0;
+  }
+}
+
+.about-cosmic-halo {
+  position: absolute;
+  inset: -20% -10% -20% -10%;
+  background:
+    radial-gradient(circle at 20% 35%, rgba(212, 175, 85, 0.2), transparent 44%),
+    radial-gradient(circle at 70% 68%, rgba(170, 190, 240, 0.16), transparent 48%),
+    radial-gradient(circle at 52% 50%, rgba(8, 12, 24, 0.78), rgba(4, 7, 16, 0.98) 72%);
+  pointer-events: none;
+  animation: aboutHaloDrift 16s ease-in-out infinite;
+}
+
+.about-stardust {
+  position: absolute;
+  inset: -8%;
+  pointer-events: none;
+  opacity: 0.72;
+  background-image:
+    radial-gradient(circle, rgba(255, 255, 255, 0.65) 0.8px, transparent 1.6px),
+    radial-gradient(circle, rgba(210, 225, 255, 0.5) 0.6px, transparent 1.4px);
+  background-size: 120px 120px, 170px 170px;
+  background-position: 0 0, 30px 25px;
+  animation: cosmosDrift 26s linear infinite alternate, aboutStardustTwinkle 7s ease-in-out infinite;
+}
+
+.about-portrait-wrap {
+  animation: aboutPortraitFloat 7.5s ease-in-out infinite;
+}
+
+.about-portrait-shell {
+  border: 1px solid rgba(212, 175, 85, 0.32);
+  box-shadow: 0 30px 70px -28px rgba(0, 0, 0, 0.72), 0 0 35px -15px rgba(212, 175, 85, 0.2);
+}
+
+.about-portrait-image {
+  transform: scale(1.03);
+}
+
+.about-portrait-sheen {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  background: linear-gradient(110deg, transparent 38%, rgba(255, 255, 255, 0.32) 50%, transparent 62%);
+  animation: aboutSheenSweep 7.5s ease-in-out infinite;
+}
+
+.about-heading-glow {
+  animation: aboutHeadingGlow 5.6s ease-in-out infinite;
+}
+
+.about-orbit-frame {
+  animation: aboutFramePulse 4.8s ease-in-out infinite;
+}
+
+.about-copy-wrap {
+  position: relative;
+}
+
+.about-stats-grid .about-stat-card {
+  animation: aboutStatRise 4.5s ease-in-out infinite;
+}
+
+.about-stats-grid .about-stat-card:nth-child(2) {
+  animation-delay: 0.35s;
+}
+
+.about-stats-grid .about-stat-card:nth-child(3) {
+  animation-delay: 0.7s;
+}
+
+.collection-cosmos {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  overflow: hidden;
+  z-index: 1;
+  opacity: 1;
+}
+
+.collection-nebula {
+  position: absolute;
+  inset: -15%;
+  background:
+    radial-gradient(circle at 18% 32%, rgba(255, 255, 255, 0.1), transparent 42%),
+    radial-gradient(circle at 75% 18%, rgba(255, 255, 255, 0.09), transparent 48%),
+    radial-gradient(circle at 66% 70%, rgba(205, 215, 235, 0.12), transparent 46%),
+    radial-gradient(circle at 32% 78%, rgba(175, 195, 255, 0.08), transparent 42%),
+    radial-gradient(circle at 50% 52%, rgba(8, 12, 24, 0.8), rgba(2, 3, 7, 0.95) 68%);
+  mix-blend-mode: screen;
+  animation: cosmosDrift 24s ease-in-out infinite alternate;
+}
+
+.collection-starfield {
+  position: absolute;
+  inset: 0;
+}
+
+.collection-spark {
+  position: absolute;
+  left: var(--x);
+  top: var(--y);
+  width: var(--size);
+  height: var(--size);
+  border-radius: 9999px;
+  background: hsl(var(--hue) 88% 92% / var(--alpha));
+  box-shadow:
+    0 0 8px hsl(var(--hue) 100% 85% / calc(var(--alpha) * 0.75)),
+    0 0 18px hsl(var(--hue) 100% 80% / calc(var(--alpha) * 0.45));
+  filter: blur(var(--blur));
+  opacity: 0.42;
+  animation:
+    sparkWander var(--dur) linear infinite,
+    sparkPulse var(--pulse) ease-in-out infinite;
+  animation-delay: var(--delay), var(--pulse-delay);
+  will-change: transform, opacity, filter;
+}
+
+.collection-shooting-layer {
+  position: absolute;
+  inset: 0;
+}
+
+.collection-shooting-star {
+  position: absolute;
+  left: var(--sx);
+  top: var(--sy);
+  width: var(--slen);
+  height: 1.5px;
+  transform-origin: left center;
+  border-radius: 9999px;
+  background: linear-gradient(90deg, rgba(245, 250, 255, 0.95), rgba(205, 220, 255, 0));
+  box-shadow: 0 0 10px rgba(220, 235, 255, 0.45);
+  opacity: 0;
+  animation: shootingDash var(--shoot-dur) linear infinite;
+  animation-delay: var(--shoot-delay);
+  will-change: transform, opacity;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .about-cosmic-halo,
+  .about-stardust,
+  .about-portrait-wrap,
+  .about-portrait-sheen,
+  .about-heading-glow,
+  .about-orbit-frame,
+  .about-stats-grid .about-stat-card,
+  .collection-nebula,
+  .collection-spark,
+  .collection-shooting-star {
+    animation: none;
+  }
+}

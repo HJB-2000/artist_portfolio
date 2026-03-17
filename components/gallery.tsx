@@ -1,24 +1,98 @@
 "use client"
 
+import type { CSSProperties } from "react"
 import Image from "next/image"
 import { useArtworkModal, artworks } from "./artwork-modal-context"
 
 export function Gallery() {
-  const { heroArtwork, selectHeroArtwork, openModal } = useArtworkModal()
+  const { heroArtwork, selectHeroArtwork, openModal, openItemPreview } = useArtworkModal()
 
   const featuredArtwork = heroArtwork
   const thumbnails = artworks.filter(a => a.id !== featuredArtwork.id).slice(0, 4)
+  const sparkParticles = Array.from({ length: 180 }, (_, index) => {
+    const seed = index + 1
+    const fract = (value: number) => value - Math.floor(value)
+    const rand = (scale: number) => fract(Math.sin(seed * scale) * 43758.5453123)
+
+    return {
+      x: Math.round(rand(12.9898) * 1000) / 10,
+      y: -18 + rand(78.233) * 108,
+      size: 0.7 + rand(39.425) * 2.1,
+      dur: 10 + rand(45.164) * 20,
+      delay: -rand(94.673) * 22,
+      dx: -18 + rand(31.692) * 36,
+      dy: 180 + rand(27.157) * 340,
+      pulse: 2.5 + rand(66.731) * 6.8,
+      pulseDelay: -rand(18.257) * 5,
+      hue: 198 + rand(71.933) * 38,
+      alpha: 0.35 + rand(52.621) * 0.52,
+      blur: rand(15.371) * 1.05,
+    }
+  })
+  const shootingStars = [
+    { x: 6, y: 10, len: 180, dur: 17.5, delay: -9.2, angle: -24 },
+    { x: 21, y: 7, len: 150, dur: 20.2, delay: -2.8, angle: -21 },
+    { x: 49, y: 14, len: 210, dur: 22.8, delay: -11.4, angle: -26 },
+    { x: 67, y: 9, len: 165, dur: 19.6, delay: -5.2, angle: -22 },
+    { x: 83, y: 13, len: 140, dur: 24.4, delay: -15.6, angle: -19 },
+    { x: 38, y: 5, len: 175, dur: 21.2, delay: -6.7, angle: -23 },
+  ]
 
   return (
     <section id="collection" className="relative py-24 lg:py-32 overflow-hidden">
+      <div aria-hidden className="pointer-events-none absolute inset-x-0 top-0 h-20 sm:h-24 bg-gradient-to-b from-background via-background/90 to-transparent z-[6]" />
+      <div aria-hidden className="pointer-events-none absolute inset-x-0 bottom-0 h-20 sm:h-24 bg-gradient-to-t from-background via-background/90 to-transparent z-[6]" />
+
       <div className="absolute inset-0 z-0">
         <Image
           src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Gemini_Generated_Image_y3ww5qy3ww5qy3ww-0jKeF2DVWdGcQaYx7wgu9BsixF6Ly5.png"
           alt=""
           fill
-          className="object-cover opacity-30"
+          className="object-cover opacity-25"
         />
-        <div className="absolute inset-0 bg-gradient-to-b from-background via-background/95 to-background" />
+        <div className="absolute inset-0 bg-black/60" />
+        <div className="absolute inset-0 bg-gradient-to-b from-background/95 via-background to-background" />
+        <div aria-hidden className="collection-cosmos">
+          <div className="collection-nebula" />
+          <div className="collection-starfield">
+            {sparkParticles.map((spark, index) => (
+              <span
+                key={`spark-${index}`}
+                className="collection-spark"
+                style={{
+                  "--x": `${spark.x}%`,
+                  "--y": `${spark.y}%`,
+                  "--size": `${spark.size}px`,
+                  "--dur": `${spark.dur}s`,
+                  "--delay": `${spark.delay}s`,
+                  "--dx": `${spark.dx}px`,
+                  "--dy": `${spark.dy}px`,
+                  "--pulse": `${spark.pulse}s`,
+                  "--pulse-delay": `${spark.pulseDelay}s`,
+                  "--hue": `${spark.hue}`,
+                  "--alpha": `${spark.alpha}`,
+                  "--blur": `${spark.blur}px`,
+                } as CSSProperties}
+              />
+            ))}
+          </div>
+          <div className="collection-shooting-layer">
+            {shootingStars.map((star, index) => (
+              <span
+                key={`shooting-star-${index}`}
+                className="collection-shooting-star"
+                style={{
+                  "--sx": `${star.x}%`,
+                  "--sy": `${star.y}%`,
+                  "--slen": `${star.len}px`,
+                  "--shoot-dur": `${star.dur}s`,
+                  "--shoot-delay": `${star.delay}s`,
+                  "--shoot-angle": `${star.angle}deg`,
+                } as CSSProperties}
+              />
+            ))}
+          </div>
+        </div>
       </div>
 
       <div className="relative z-10 max-w-7xl mx-auto px-6">
@@ -46,12 +120,20 @@ export function Gallery() {
               <p className="text-muted-foreground text-sm md:text-base tracking-wide mb-6">
                 SIZE: {featuredArtwork.dimensions}
               </p>
-              <button 
-                onClick={() => openModal(featuredArtwork)}
-                className="border border-primary/50 text-primary px-6 py-3 text-sm tracking-[0.15em] uppercase hover:bg-primary hover:text-primary-foreground transition-all duration-300"
-              >
-                REQUEST PRIVATE VIEW.
-              </button>
+              <div className="flex flex-col gap-3 items-end">
+                <button
+                  onClick={() => openModal(featuredArtwork)}
+                  className="border border-primary/50 text-primary px-6 py-3 text-sm tracking-[0.15em] uppercase hover:bg-primary hover:text-primary-foreground transition-all duration-300"
+                >
+                  REQUEST PRIVATE VIEW.
+                </button>
+                <button
+                  onClick={() => openItemPreview(featuredArtwork)}
+                  className="border border-primary/30 text-foreground px-6 py-3 text-sm tracking-[0.15em] uppercase hover:bg-foreground hover:text-background transition-all duration-300"
+                >
+                  SHOW ITEM
+                </button>
+              </div>
             </div>
           </div>
         </div>

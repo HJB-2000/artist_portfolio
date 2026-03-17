@@ -1,51 +1,1708 @@
-[00:00:00.621] Server  LOG     ✓ Ready in 385ms
-[00:00:00.622] Server  WARN    ⚠ Cross origin request detected from 3000-firebase-artistportfoliogit-1773715356348.cluster-ikslh4rdsnbqsvu5nw3v4dqjj2.cloudworkstations.dev to /_next/* resource. In a future major version of Next.js, you will need to explicitly configure "allowedDevOrigins" in next.config to allow this.
-Read more: https://nextjs.org/docs/app/api-reference/config/next-config-js/allowedDevOrigins
-[00:00:00.966] Server  ERROR   ⨯ Error: Attempted to call useArtworkModal() from the server but useArtworkModal is on the client. It's not possible to invoke a client function from the server, it can only be rendered as a Component or passed to props of a Client Component.
-[00:00:02.013] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:00:03.297] Browser ERROR   uncaughtError: Error: Attempted to call useArtworkModal() from the server but useArtworkModal is on the client. It's not possible to invoke a client function from the server, it can only be rendered as a Component or passed to props of a Client Component.
-[00:01:23.324] Server  LOG     ✓ Compiled in 452ms
-[00:01:23.657] Server  WARN    ⚠ Fast Refresh had to perform a full reload due to a runtime error.
-[00:01:24.809] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:01:25.288] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
-[00:01:25.288] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/","route":"/"}
-[00:01:25.289] Browser LOG     %c[Vercel Web Analytics]%c [view] https://3000-firebase-artistportfoliogit-1773715356348.cluster-ikslh4rdsnbqsvu5nw3v4dqjj2.cloudworkstations.dev/ color: rgb(120, 120, 120) color: inherit {"dp":"/","o":"https://3000-firebase-artistportfoliogit-1773715356348.cluster-ikslh4rdsnbqsvu5nw3v4dqjj2.cloudworkstations.dev/","sdkn":"@vercel/analytics/next","sdkv":"1.6.1","sv":"0.1.3","ts":1773719577429} /_vercel/insights/view
-[00:01:27.688] Browser WARN    Image with src "https://3000-firebase-artistportfoliogit-1773715356348.cluster-ikslh4rdsnbqsvu5nw3v4dqjj2.cloudworkstations.dev/images/artwork-1.jpg" has "fill" and a height value of 0. This is likely because the parent element of the image has not been styled to have a set height.
-[00:03:22.664] Server  LOG     ✓ Compiled in 153ms
-[00:07:31.884] Server  LOG     ✓ Compiled in 122ms
-[00:07:41.334] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:07:41.540] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
-[00:07:41.540] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/","route":"/"}
-[00:07:41.540] Browser LOG     %c[Vercel Web Analytics]%c [view] https://3000-firebase-artistportfoliogit-1773715356348.cluster-ikslh4rdsnbqsvu5nw3v4dqjj2.cloudworkstations.dev/ color: rgb(120, 120, 120) color: inherit {"dp":"/","o":"https://3000-firebase-artistportfoliogit-1773715356348.cluster-ikslh4rdsnbqsvu5nw3v4dqjj2.cloudworkstations.dev/","sdkn":"@vercel/analytics/next","sdkv":"1.6.1","sv":"0.1.3","ts":1773719953995} /_vercel/insights/view
-[00:09:34.965] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:09:34.965] Browser WARN    Image with src "/images/artwork-1.jpg" was detected as the Largest Contentful Paint (LCP). Please add the `loading="eager"` property if this image is above the fold.
-Read more: https://nextjs.org/docs/app/api-reference/components/image#loading
-[00:09:34.965] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
-[00:09:34.965] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/","route":"/"}
-[00:09:34.965] Browser LOG     %c[Vercel Web Analytics]%c [view] https://3000-firebase-artistportfoliogit-1773715356348.cluster-ikslh4rdsnbqsvu5nw3v4dqjj2.cloudworkstations.dev/ color: rgb(120, 120, 120) color: inherit {"dp":"/","o":"https://3000-firebase-artistportfoliogit-1773715356348.cluster-ikslh4rdsnbqsvu5nw3v4dqjj2.cloudworkstations.dev/","sdkn":"@vercel/analytics/next","sdkv":"1.6.1","sv":"0.1.3","ts":1773720067481} /_vercel/insights/view
-[00:10:40.264] Server  LOG     ✓ Compiled in 49ms
-[00:10:48.754] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:10:48.871] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
-[00:10:48.871] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/","route":"/"}
-[00:10:48.871] Browser LOG     %c[Vercel Web Analytics]%c [view] https://3000-firebase-artistportfoliogit-1773715356348.cluster-ikslh4rdsnbqsvu5nw3v4dqjj2.cloudworkstations.dev/#contact color: rgb(120, 120, 120) color: inherit {"dp":"/","o":"https://3000-firebase-artistportfoliogit-1773715356348.cluster-ikslh4rdsnbqsvu5nw3v4dqjj2.cloudworkstations.dev/#contact","sdkn":"@vercel/analytics/next","sdkv":"1.6.1","sv":"0.1.3","ts":1773720141326} /_vercel/insights/view
-[00:12:37.284] Server  LOG     ✓ Compiled in 110ms
-[00:14:44.778] Browser WARN    Image with src "https://3000-firebase-artistportfoliogit-1773715356348.cluster-ikslh4rdsnbqsvu5nw3v4dqjj2.cloudworkstations.dev/images/artwork-3.jpg" has "fill" and a height value of 0. This is likely because the parent element of the image has not been styled to have a set height.
-[00:14:59.688] Browser WARN    Image with src "https://3000-firebase-artistportfoliogit-1773715356348.cluster-ikslh4rdsnbqsvu5nw3v4dqjj2.cloudworkstations.dev/images/artwork-5.jpg" has "fill" and a height value of 0. This is likely because the parent element of the image has not been styled to have a set height.
-[00:15:27.438] Server  LOG     ✓ Compiled in 130ms
-[00:21:20.299] Server  LOG     ✓ Compiled in 46ms
-[00:21:20.321] Server  WARN    ⚠ Fast Refresh had to perform a full reload when ./components/artwork-modal-context.tsx changed. Read more: https://nextjs.org/docs/messages/fast-refresh-reload
-[00:21:36.061] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:21:36.237] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
-[00:21:36.237] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/","route":"/"}
-[00:21:36.237] Browser LOG     %c[Vercel Web Analytics]%c [view] https://3000-firebase-artistportfoliogit-1773715356348.cluster-ikslh4rdsnbqsvu5nw3v4dqjj2.cloudworkstations.dev/#contact color: rgb(120, 120, 120) color: inherit {"dp":"/","o":"https://3000-firebase-artistportfoliogit-1773715356348.cluster-ikslh4rdsnbqsvu5nw3v4dqjj2.cloudworkstations.dev/#contact","sdkn":"@vercel/analytics/next","sdkv":"1.6.1","sv":"0.1.3","ts":1773720788685} /_vercel/insights/view
-[00:22:35.788] Server  LOG     ✓ Compiled in 53ms
-[00:23:44.692] Server  LOG     ✓ Compiled in 50ms
-[00:26:55.183] Server  LOG     ✓ Compiled in 115ms
-[00:27:57.677] Server  LOG     ✓ Compiled in 52ms
-[00:27:57.707] Server  WARN    ⚠ Fast Refresh had to perform a full reload when ./components/artwork-modal-context.tsx changed. Read more: https://nextjs.org/docs/messages/fast-refresh-reload
-[00:28:08.189] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:28:08.189] Browser WARN    Image with src "/images/artwork-1.jpg" was detected as the Largest Contentful Paint (LCP). Please add the `loading="eager"` property if this image is above the fold.
-Read more: https://nextjs.org/docs/app/api-reference/components/image#loading
-[00:28:08.445] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
-[00:28:08.445] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/","route":"/"}
-[00:28:08.445] Browser LOG     %c[Vercel Web Analytics]%c [view] https://3000-firebase-artistportfoliogit-1773715356348.cluster-ikslh4rdsnbqsvu5nw3v4dqjj2.cloudworkstations.dev/#contact color: rgb(120, 120, 120) color: inherit {"dp":"/","o":"https://3000-firebase-artistportfoliogit-1773715356348.cluster-ikslh4rdsnbqsvu5nw3v4dqjj2.cloudworkstations.dev/#contact","sdkn":"@vercel/analytics/next","sdkv":"1.6.1","sv":"0.1.3","ts":1773721180900} /_vercel/insights/view
+[00:00:00.962] Server  LOG     ✓ Ready in 624ms
+[00:00:03.273] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:00:03.619] Browser ERROR   A tree hydrated but some attributes of the server rendered HTML didn't match the client properties. This won't be patched up. This can happen if a SSR-ed Client Component used:
+
+- A server/client branch `if (typeof window !== 'undefined')`.
+- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
+- Date formatting in a user's locale which doesn't match the server.
+- External changing data without sending a snapshot of it along with the HTML.
+- Invalid HTML tag nesting.
+
+It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
+
+%s%s https://react.dev/link/hydration-mismatch 
+
+  ...
+    <HTTPAccessFallbackErrorBoundary pathname="/" notFound={<SegmentViewNode>} forbidden={undefined} ...>
+      <RedirectBoundary>
+        <RedirectErrorBoundary router={{...}}>
+          <InnerLayoutRouter url="/#about" tree={[...]} params={{}} cacheNode={{rsc:<Fragment>, ...}} segmentPath={[...]} ...>
+            <SegmentViewNode type="page" pagePath="page.tsx">
+              <SegmentTrieNode>
+              <Home>
+                <ArtworkModalProvider>
+                  <main className="min-h-scre...">
+                    <Header>
+                    <Hero>
+                    <Gallery>
+                      <section id="collection" className="relative p...">
+                        <div>
+                        <div>
+                        <div className="absolute i...">
+                          <img>
+                          <div>
+                          <div>
+                          <div aria-hidden={true} className="collection...">
+                            <div>
+                            <div className="collection...">
+                              <span
+                                className="collection-spark"
+                                style={{
++                                 --x: "92.2%"
+-                                 --x: "92.2%"
++                                 --y: "1.7553672316716984%"
+-                                 --y: "1.7553672316716984%"
++                                 --size: "1.3862851770092675px"
+-                                 --size: "1.3862851770092675px"
++                                 --dur: "24.794706531974953s"
+-                                 --dur: "24.794706531974953s"
++                                 --delay: "-7.552005232028023s"
+-                                 --delay: "-7.552005232028023s"
++                                 --dx: "7.211091119621415px"
+-                                 --dx: "7.211091119621415px"
++                                 --dy: "219.77280870720278px"
+-                                 --dy: "219.77280870720278px"
++                                 --pulse: "5.646800816275936s"
+-                                 --pulse: "5.646800816275936s"
++                                 --pulse-delay: "-2.9767687017920252s"
+-                                 --pulse-delay: "-2.9767687017738353s"
++                                 --hue: "224.85870933939805"
+-                                 --hue: "224.85870933939805"
++                                 --alpha: "0.8196240307779226"
+-                                 --alpha: "0.8196240307779226"
++                                 --blur: "0.5952371195404339px"
+-                                 --blur: "0.5952371195404339px"
+                                }}
+                              >
+                              <span
+                                className="collection-spark"
+                                style={{
++                                 --x: "5.7%"
+-                                 --x: "5.7%"
++                                 --y: "-15.073447217364446%"
+-                                 --y: "-15.073447217364446%"
++                                 --size: "1.5913133510723128px"
+-                                 --size: "1.5913133510723128px"
++                                 --dur: "10.651367353857495s"
+-                                 --dur: "10.651367353784735s"
++                                 --delay: "-14.614008031829144s"
+-                                 --delay: "-14.614008031829144s"
++                                 --dx: "-15.419717548327753px"
+-                                 --dx: "-15.419717548327753px"
++                                 --dy: "253.14769301592605px"
+-                                 --dy: "253.14769301592605px"
++                                 --pulse: "7.344370101031381s"
+-                                 --pulse: "7.344370101031381s"
++                                 --pulse-delay: "-4.535198798330384s"
+-                                 --pulse-delay: "-4.535198798330384s"
++                                 --hue: "213.18581870514026"
+-                                 --hue: "213.18581870514026"
++                                 --alpha: "0.6072924166190206"
+-                                 --alpha: "0.6072924166190206"
++                                 --blur: "0.09504977199721908px"
+-                                 --blur: "0.09504977199721908px"
+                                }}
+                              >
+                              <span>
+                              <span>
+                              <span>
+                              <span>
+                              <span
+                                className="collection-spark"
+                                style={{
++                                 --x: "16.6%"
+-                                 --x: "16.6%"
++                                 --y: "-4.802730959403561%"
+-                                 --y: "-4.802730959403561%"
++                                 --size: "1.66116427941015px"
+-                                 --size: "1.66116427941015px"
++                                 --dur: "12.909891412273282s"
+-                                 --dur: "12.909891412273282s"
++                                 --delay: "-13.140070989420565s"
+-                                 --delay: "-13.140070989420565s"
++                                 --dx: "15.889224807266146px"
+-                                 --dx: "15.889224807266146px"
++                                 --dy: "258.71115423564333px"
+-                                 --dy: "258.71115423564333px"
++                                 --pulse: "7.931339058064623s"
+-                                 --pulse: "7.931339058064623s"
++                                 --pulse-delay: "-3.6813161331156152s"
+-                                 --pulse-delay: "-3.6813161331156152s"
++                                 --hue: "218.2741997553676"
+-                                 --hue: "218.2741997553676"
++                                 --alpha: "0.3527797309432935"
+-                                 --alpha: "0.3527797309451853"
++                                 --blur: "0.012271029224029917px"
+-                                 --blur: "0.012271029224029917px"
+                                }}
+                              >
+                              <span>
+                              <span
+                                className="collection-spark"
+                                style={{
++                                 --x: "54%"
+-                                 --x: "54%"
++                                 --y: "81.35587649379886%"
+-                                 --y: "81.35587649379886%"
++                                 --size: "1.5817866968693124px"
+-                                 --size: "1.5817866968693124px"
++                                 --dur: "17.009700650087325s"
+-                                 --dur: "17.009700650087325s"
++                                 --delay: "-19.92412720257562s"
+-                                 --delay: "-19.92412720257562s"
++                                 --dx: "14.396283180380124px"
+-                                 --dx: "14.396283180380124px"
++                                 --dy: "356.1671866893448px"
+-                                 --dy: "356.1671866893448px"
++                                 --pulse: "5.9537736658399805s"
+-                                 --pulse: "5.9537736658399805s"
++                                 --pulse-delay: "-2.557650060916785s"
+-                                 --pulse-delay: "-2.557650060916785s"
++                                 --hue: "223.129635092635"
+-                                 --hue: "223.12963509270412"
++                                 --alpha: "0.8198189965994971"
+-                                 --alpha: "0.8198189965994971"
++                                 --blur: "0.948556274296061px"
+-                                 --blur: "0.948556274296061px"
+                                }}
+                              >
+                              <span>
+                              <span>
+                              <span>
+                              <span>
+                              <span>
+                              <span>
+                              <span>
+                              <span>
+                              <span
+                                className="collection-spark"
+                                style={{
++                                 --x: "64.4%"
+-                                 --x: "64.4%"
++                                 --y: "65.82339708979998%"
+-                                 --y: "65.82339708979998%"
++                                 --size: "2.3148678754780123px"
+-                                 --size: "2.3148678754780123px"
++                                 --dur: "11.399012260808377s"
+-                                 --dur: "11.399012260808377s"
++                                 --delay: "-3.543442231195513s"
+-                                 --delay: "-3.543442231195513s"
++                                 --dx: "13.7275753391732px"
+-                                 --dx: "13.727575339435134px"
++                                 --dy: "247.31190612146747px"
+-                                 --dy: "247.31190612146747px"
++                                 --pulse: "7.560478376329411s"
+-                                 --pulse: "7.560478376329411s"
++                                 --pulse-delay: "-2.813767278967134s"
+-                                 --pulse-delay: "-2.813767278967134s"
++                                 --hue: "208.00828563448158"
+-                                 --hue: "208.00828563448158"
++                                 --alpha: "0.7156567832935252"
+-                                 --alpha: "0.7156567832935252"
++                                 --blur: "0.446619453357016px"
+-                                 --blur: "0.446619453357016px"
+                                }}
+                              >
+                              <span>
+                              <span
+                                className="collection-spark"
+                                style={{
++                                 --x: "76%"
+-                                 --x: "76%"
++                                 --y: "7.911382757847605%"
+-                                 --y: "7.911382757847605%"
++                                 --size: "1.138326892250052px"
+-                                 --size: "1.138326892250052px"
++                                 --dur: "13.61956201333669s"
+-                                 --dur: "13.61956201333669s"
++                                 --delay: "-3.934141807301785s"
+-                                 --delay: "-3.934141807461856s"
++                                 --dx: "-3.036565454414813px"
+-                                 --dx: "-3.036565454414813px"
++                                 --dy: "436.505035171067px"
+-                                 --dy: "436.505035171067px"
++                                 --pulse: "2.9544216560097993s"
+-                                 --pulse: "2.9544216560097993s"
++                                 --pulse-delay: "-0.9805934483119927s"
+-                                 --pulse-delay: "-0.9805934483301826s"
++                                 --hue: "200.8375999855416"
+-                                 --hue: "200.8375999855416"
++                                 --alpha: "0.571920731483683"
+-                                 --alpha: "0.571920731483683"
++                                 --blur: "0.3428176825573246px"
+-                                 --blur: "0.3428176825573246px"
+                                }}
+                              >
+                              <span>
+                              <span
+                                className="collection-spark"
+                                style={{
++                                 --x: "66.1%"
+-                                 --x: "66.1%"
++                                 --y: "15.439682460200856%"
+-                                 --y: "15.439682460200856%"
++                                 --size: "2.4057150705046295px"
+-                                 --size: "2.4057150705046295px"
++                                 --dur: "20.289900578791276s"
+-                                 --dur: "20.289900578791276s"
++                                 --delay: "-11.272914740453416s"
+-                                 --delay: "-11.272914740453416s"
++                                 --dx: "1.4515965917380527px"
+-                                 --dx: "1.4515965917380527px"
++                                 --dy: "207.81434181233635px"
+-                                 --dy: "207.81434181233635px"
++                                 --pulse: "8.116348123404896s"
+-                                 --pulse: "8.116348123404896s"
++                                 --pulse-delay: "-4.151809393970325s"
+-                                 --pulse-delay: "-4.151809393970325s"
++                                 --hue: "203.21569204467232"
+-                                 --hue: "203.21569204453408"
++                                 --alpha: "0.7101763242154266"
+-                                 --alpha: "0.7101763242154266"
++                                 --blur: "0.12100045808256255px"
+-                                 --blur: "0.12100045808256255px"
+                                }}
+                              >
+                              <span>
+                              <span>
+                              <span
+                                className="collection-spark"
+                                style={{
++                                 --x: "33%"
+-                                 --x: "33%"
++                                 --y: "14.59431740117725%"
+-                                 --y: "14.59431740117725%"
++                                 --size: "1.1306731073058471px"
+-                                 --size: "1.1306731073058471px"
++                                 --dur: "11.862793733307626s"
+-                                 --dur: "11.862793733307626s"
++                                 --delay: "-2.426687492610654s"
+-                                 --delay: "-2.426687492450583s"
++                                 --dx: "-10.895802268540137px"
+-                                 --dx: "-10.895802268540137px"
++                                 --dy: "388.4067630519712px"
+-                                 --dy: "388.4067630519712px"
++                                 --pulse: "5.983420673615728s"
+-                                 --pulse: "5.983420673615728s"
++                                 --pulse-delay: "-3.9341324022825575s"
+-                                 --pulse-delay: "-3.9341324022825575s"
++                                 --hue: "215.62126848493062"
+-                                 --hue: "215.62126848493062"
++                                 --alpha: "0.43340890878709615"
+-                                 --alpha: "0.43340890878709615"
++                                 --blur: "1.048850627075808px"
+-                                 --blur: "1.048850627075808px"
+                                }}
+                              >
+                              <span>
+                              <span
+                                className="collection-spark"
+                                style={{
++                                 --x: "0%"
+-                                 --x: "0%"
++                                 --y: "82.74038178674527%"
+-                                 --y: "82.74038178674527%"
++                                 --size: "2.6479809541131543px"
+-                                 --size: "2.6479809541207944px"
++                                 --dur: "27.008538644076907s"
+-                                 --dur: "27.008538644076907s"
++                                 --delay: "-12.99617231330194s"
+-                                 --delay: "-12.99617231330194s"
++                                 --dx: "-6.423722298553912px"
+-                                 --dx: "-6.423722298553912px"
++                                 --dy: "424.2338746895257px"
+-                                 --dy: "424.2338746895257px"
++                                 --pulse: "3.6733122092613484s"
+-                                 --pulse: "3.6733122092613484s"
++                                 --pulse-delay: "-3.6623379786124133s"
+-                                 --pulse-delay: "-3.6623379786124133s"
++                                 --hue: "227.47379118507524"
+-                                 --hue: "227.47379118507524"
++                                 --alpha: "0.4971360943367472"
+-                                 --alpha: "0.4971360943367472"
++                                 --blur: "0.8953730815639575px"
+-                                 --blur: "0.8953730815639575px"
+                                }}
+                              >
+                              <span>
+                              <span
+                                className="collection-spark"
+                                style={{
++                                 --x: "42%"
+-                                 --x: "42%"
++                                 --y: "87.41769518669753%"
+-                                 --y: "87.41769518709043%"
++                                 --size: "2.6845489892324625px"
+-                                 --size: "2.6845489892324625px"
++                                 --dur: "23.89204297152901s"
+-                                 --dur: "23.89204297152901s"
++                                 --delay: "-0.2911906446533976s"
+-                                 --delay: "-0.2911906446533976s"
++                                 --dx: "-16.828200801392086px"
+-                                 --dx: "-16.828200801392086px"
++                                 --dy: "248.51804830308538px"
+-                                 --dy: "248.51804830308538px"
++                                 --pulse: "3.3538645915515644s"
+-                                 --pulse: "3.3538645915515644s"
++                                 --pulse-delay: "-3.6680762969263014s"
+-                                 --pulse-delay: "-3.6680762969263014s"
++                                 --hue: "199.97148645055086"
+-                                 --hue: "199.97148645055086"
++                                 --alpha: "0.6622867427475285"
+-                                 --alpha: "0.6622867427475285"
++                                 --blur: "0.23335038619243278px"
+-                                 --blur: "0.23335038619243278px"
+                                }}
+                              >
+                              <span
+                                className="collection-spark"
+                                style={{
++                                 --x: "98.5%"
+-                                 --x: "98.5%"
++                                 --y: "14.478306469231029%"
+-                                 --y: "14.478306469231029%"
++                                 --size: "2.2976662418317577px"
+-                                 --size: "2.2976662418317577px"
++                                 --dur: "19.27013562162756s"
+-                                 --dur: "19.27013562162756s"
++                                 --delay: "-12.165024298050412s"
+-                                 --delay: "-12.165024298050412s"
++                                 --dx: "-4.158876538305776px"
+-                                 --dx: "-4.158876538305776px"
++                                 --dy: "479.729801871581px"
+-                                 --dy: "479.7298018691072px"
++                                 --pulse: "5.997794453895767s"
+-                                 --pulse: "5.997794453895767s"
++                                 --pulse-delay: "-1.6508327184055815s"
+-                                 --pulse-delay: "-1.6508327184055815s"
++                                 --hue: "215.81954546045745"
+-                                 --hue: "215.81954546045745"
++                                 --alpha: "0.6213901104842079"
+-                                 --alpha: "0.6213901104842079"
++                                 --blur: "0.02268490431815735px"
+-                                 --blur: "0.02268490431815735px"
+                                }}
+                              >
+                              <span>
+                              <span>
+                              <span>
+                              <span>
+                              <span>
+                              <span
+                                className="collection-spark"
+                                style={{
++                                 --x: "98.2%"
+-                                 --x: "98.2%"
++                                 --y: "10.585197374573909%"
+-                                 --y: "10.585197374573909%"
++                                 --size: "0.7144434098150668px"
+-                                 --size: "0.7144434098150668px"
++                                 --dur: "21.406024844036438s"
+-                                 --dur: "21.406024844036438s"
++                                 --delay: "-12.206383807708335s"
+-                                 --delay: "-12.206383807708335s"
++                                 --dx: "2.2574841371679213px"
+-                                 --dx: "2.257484137036954px"
++                                 --dy: "505.19684144346684px"
+-                                 --dy: "505.19684144346684px"
++                                 --pulse: "7.339934885408729s"
+-                                 --pulse: "7.339934885408729s"
++                                 --pulse-delay: "-3.9838241873621882s"
+-                                 --pulse-delay: "-3.9838241873621882s"
++                                 --hue: "228.95543510215066"
+-                                 --hue: "228.95543510215066"
++                                 --alpha: "0.5035106369426103"
+-                                 --alpha: "0.5035106369426103"
++                                 --blur: "0.8410373270431593px"
+-                                 --blur: "0.8410373270431593px"
+                                }}
+                              >
+                              <span>
+                              <span>
+                              <span
+                                className="collection-spark"
+                                style={{
++                                 --x: "76.8%"
+-                                 --x: "76.8%"
++                                 --y: "69.21505295870884%"
+-                                 --y: "69.21505295870884%"
++                                 --size: "1.0254632115953428px"
+-                                 --size: "1.0254632115953428px"
++                                 --dur: "21.6656332128332s"
+-                                 --dur: "21.66563321297872s"
++                                 --delay: "-15.216639809441403s"
+-                                 --delay: "-15.216639809441403s"
++                                 --dx: "15.60004627154558px"
+-                                 --dx: "15.60004627154558px"
++                                 --dy: "186.05166486639064px"
+-                                 --dy: "186.05166486639064px"
++                                 --pulse: "5.826593220137875s"
+-                                 --pulse: "5.826593220137875s"
++                                 --pulse-delay: "-0.3168079295573989s"
+-                                 --pulse-delay: "-0.3168079295573989s"
++                                 --hue: "235.1581140370945"
+-                                 --hue: "235.1581140370945"
++                                 --alpha: "0.6730618459430115"
+-                                 --alpha: "0.6730618459430115"
++                                 --blur: "0.6793874222239538px"
+-                                 --blur: "0.6793874222239538px"
+                                }}
+                              >
+                              <span>
+                              <span>
+                              <span>
+                              <span>
+                              <span>
+                              <span>
+                              <span>
+                              <span>
+                              <span>
+                              <span>
+                              <span
+                                className="collection-spark"
+                                style={{
++                                 --x: "30.2%"
+-                                 --x: "30.2%"
++                                 --y: "60.08591831293597%"
+-                                 --y: "60.08591831293597%"
++                                 --size: "1.558853468754387px"
+-                                 --size: "1.558853468754387px"
++                                 --dur: "18.90856089805311s"
+-                                 --dur: "18.90856089805311s"
++                                 --delay: "-9.899720528417674s"
+-                                 --delay: "-9.899720528337639s"
++                                 --dx: "5.192833739361959px"
+-                                 --dx: "5.192833739361959px"
++                                 --dy: "237.35968015993421px"
+-                                 --dy: "237.35968015993421px"
++                                 --pulse: "8.450907128224571s"
+-                                 --pulse: "8.450907128224571s"
++                                 --pulse-delay: "-0.7922444448922761s"
+-                                 --pulse-delay: "-0.7922444448922761s"
++                                 --hue: "217.47407647466025"
+-                                 --hue: "217.47407647466025"
++                                 --alpha: "0.6194531422303408"
+-                                 --alpha: "0.6194531422303408"
++                                 --blur: "0.14306017295675702px"
+-                                 --blur: "0.14306017295675702px"
+                                }}
+                              >
+                              <span>
+                              <span>
+                              <span>
+                              <span>
+                              <span>
+                              <span>
+                              <span
+                                className="collection-spark"
+                                style={{
++                                 --x: "22.5%"
+-                                 --x: "22.5%"
++                                 --y: "58.586111078591784%"
+-                                 --y: "58.586111078591784%"
++                                 --size: "2.691992445759388px"
+-                                 --size: "2.691992445759388px"
++                                 --dur: "25.71871553431265s"
+-                                 --dur: "25.71871553431265s"
++                                 --delay: "-6.384331221532193s"
+-                                 --delay: "-6.384331221532193s"
++                                 --dx: "-13.872543624801438px"
+-                                 --dx: "-13.872543624801438px"
++                                 --dy: "430.0620411176351px"
+-                                 --dy: "430.0620411176351px"
++                                 --pulse: "4.864632297410571s"
+-                                 --pulse: "4.864632297410571s"
++                                 --pulse-delay: "-2.9349783343059244s"
+-                                 --pulse-delay: "-2.9349783342877345s"
++                                 --hue: "213.4711227288717"
+-                                 --hue: "213.4711227288717"
++                                 --alpha: "0.6429571542526538"
+-                                 --alpha: "0.6429571542526538"
++                                 --blur: "0.46376439683172066px"
+-                                 --blur: "0.46376439683172066px"
+                                }}
+                              >
+                              <span>
+                              <span>
+                              <span>
+                              <span>
+                              <span>
+                              <span>
+                              <span>
+                              <span>
+                              <span>
+                              <span>
+                              <span>
+                              <span>
+                              <span
+                                className="collection-spark"
+                                style={{
++                                 --x: "36.8%"
+-                                 --x: "36.8%"
++                                 --y: "14.656051220517838%"
+-                                 --y: "14.65605122091074%"
++                                 --size: "1.9796384088869672px"
+-                                 --size: "1.9796384088869672px"
++                                 --dur: "20.36945025276509s"
+-                                 --dur: "20.36945025276509s"
++                                 --delay: "-8.135988830239512s"
+-                                 --delay: "-8.135988830239512s"
++                                 --dx: "-7.6526890504028415px"
+-                                 --dx: "-7.6526890504028415px"
++                                 --dy: "391.86129576646636px"
+-                                 --dy: "391.86129576646636px"
++                                 --pulse: "8.302557487968443s"
+-                                 --pulse: "8.302557487968443s"
++                                 --pulse-delay: "-2.6797226236158167s"
+-                                 --pulse-delay: "-2.6797226236158167s"
++                                 --hue: "217.18667176194867"
+-                                 --hue: "217.18667176194867"
++                                 --alpha: "0.5711931139975785"
+-                                 --alpha: "0.5711931139975785"
++                                 --blur: "0.3539490643957834px"
+-                                 --blur: "0.3539490643957834px"
+                                }}
+                              >
+                              <span
+                                className="collection-spark"
+                                style={{
++                                 --x: "50.7%"
+-                                 --x: "50.7%"
++                                 --y: "40.28989515295689%"
+-                                 --y: "40.28989515295689%"
++                                 --size: "1.2692161591670357px"
+-                                 --size: "1.2692161591670357px"
++                                 --dur: "28.9045674278168s"
+-                                 --dur: "28.9045674278168s"
++                                 --delay: "-12.612642241234425s"
+-                                 --delay: "-12.612642241234425s"
++                                 --dx: "4.668455607286887px"
+-                                 --dx: "4.668455607286887px"
++                                 --dy: "382.8231211064849px"
+-                                 --dy: "382.823121105248px"
++                                 --pulse: "6.6597696705437555s"
+-                                 --pulse: "6.6597696705437555s"
++                                 --pulse-delay: "-0.6459543597520678s"
+-                                 --pulse-delay: "-0.6459543597520678s"
++                                 --hue: "207.2420197217143"
+-                                 --hue: "207.2420197217143"
++                                 --alpha: "0.5413646066388174"
+-                                 --alpha: "0.5413646066388174"
++                                 --blur: "0.3795025704261207px"
+-                                 --blur: "0.3795025704261207px"
+                                }}
+                              >
+                              <span>
+                              <span
+                                className="collection-spark"
+                                style={{
++                                 --x: "2.9%"
+-                                 --x: "2.9%"
++                                 --y: "8.512651567711146%"
+-                                 --y: "8.512651567711146%"
++                                 --size: "1.3492106819319813px"
+-                                 --size: "1.3492106819319813px"
++                                 --dur: "26.124701959925005s"
+-                                 --dur: "26.124701959925005s"
++                                 --delay: "-1.0468153721521958s"
+-                                 --delay: "-1.0468153721521958s"
++                                 --dx: "-12.215429477771977px"
+-                                 --dx: "-12.215429477771977px"
++                                 --dy: "464.9780310695314px"
+-                                 --dy: "464.9780310695314px"
++                                 --pulse: "5.687557883164845s"
+-                                 --pulse: "5.687557883115369s"
++                                 --pulse-delay: "-1.2473586576197704s"
+-                                 --pulse-delay: "-1.2473586576197704s"
++                                 --hue: "220.68695053427655"
+-                                 --hue: "220.68695053427655"
++                                 --alpha: "0.6791781273146625"
+-                                 --alpha: "0.6791781273146625"
++                                 --blur: "0.8763509788355806px"
+-                                 --blur: "0.8763509788355806px"
+                                }}
+                              >
+                              <span
+                                className="collection-spark"
+                                style={{
++                                 --x: "19%"
+-                                 --x: "19%"
++                                 --y: "19.483024375149398%"
+-                                 --y: "19.4830243755423%"
++                                 --size: "2.596795263144304px"
+-                                 --size: "2.596795263144304px"
++                                 --dur: "11.27425187783956s"
+-                                 --dur: "11.27425187783956s"
++                                 --delay: "-16.105753897545583s"
+-                                 --delay: "-16.105753897545583s"
++                                 --dx: "8.633877845015377px"
+-                                 --dx: "8.633877845015377px"
++                                 --dy: "448.38939349589054px"
+-                                 --dy: "448.38939349589054px"
++                                 --pulse: "6.2715465777844654s"
+-                                 --pulse: "6.2715465777844654s"
++                                 --pulse-delay: "-3.1894901170971934s"
+-                                 --pulse-delay: "-3.1894901170971934s"
++                                 --hue: "217.18526423181174"
+-                                 --hue: "217.18526423181174"
++                                 --alpha: "0.5307105561465142"
+-                                 --alpha: "0.5307105561465142"
++                                 --blur: "0.5208975095046299px"
+-                                 --blur: "0.5208975095046299px"
+                                }}
+                              >
+                              <span>
+                              <span
+                                className="collection-spark"
+                                style={{
++                                 --x: "15.4%"
+-                                 --x: "15.4%"
++                                 --y: "26.836230412242003%"
+-                                 --y: "26.836230412242003%"
++                                 --size: "1.645303004561356px"
+-                                 --size: "1.6453030045537163px"
++                                 --dur: "27.615011931047775s"
+-                                 --dur: "27.615011931047775s"
++                                 --delay: "-13.821832757530501s"
+-                                 --delay: "-13.821832757530501s"
++                                 --dx: "-17.66689359949669px"
+-                                 --dx: "-17.66689359949669px"
++                                 --dy: "355.3720182330653px"
+-                                 --dy: "355.3720182330653px"
++                                 --pulse: "5.416189663382829s"
+-                                 --pulse: "5.416189663382829s"
++                                 --pulse-delay: "-1.8685587984873564s"
+-                                 --pulse-delay: "-1.8685587984873564s"
++                                 --hue: "235.1223964772289"
+-                                 --hue: "235.1223964772289"
++                                 --alpha: "0.5046901323867314"
+-                                 --alpha: "0.5046901323867314"
++                                 --blur: "0.4872620428706796px"
+-                                 --blur: "0.4872620428668597px"
+                                }}
+                              >
+                              <span
+                                className="collection-spark"
+                                style={{
++                                 --x: "69.3%"
+-                                 --x: "69.3%"
++                                 --y: "-15.192321923444979%"
+-                                 --y: "-15.192321923444979%"
++                                 --size: "1.72402908215372px"
+-                                 --size: "1.7240290821384405px"
++                                 --dur: "11.667659908125643s"
+-                                 --dur: "11.667659908125643s"
++                                 --delay: "-9.28602783739916s"
+-                                 --delay: "-9.28602783739916s"
++                                 --dx: "15.408767616259865px"
+-                                 --dx: "15.408767616259865px"
++                                 --dy: "346.9096263749816px"
+-                                 --dy: "346.9096263749816px"
++                                 --pulse: "3.1825880804506594s"
+-                                 --pulse: "3.1825880804506594s"
++                                 --pulse-delay: "-1.4127554891092586s"
+-                                 --pulse-delay: "-1.4127554891092586s"
++                                 --hue: "207.82989380220897"
+-                                 --hue: "207.82989380220897"
++                                 --alpha: "0.8401463320619951"
+-                                 --alpha: "0.8401463320601033"
++                                 --blur: "0.07002766532987152px"
+-                                 --blur: "0.07002766532987152px"
+                                }}
+                              >
+                              <span
+                                className="collection-spark"
+                                style={{
++                                 --x: "18.4%"
+-                                 --x: "18.4%"
++                                 --y: "43.09366537781898%"
+-                                 --y: "43.09366537781898%"
++                                 --size: "2.2427871837764544px"
+-                                 --size: "2.2427871837764544px"
++                                 --dur: "27.787603394390317s"
+-                                 --dur: "27.787603394390317s"
++                                 --delay: "-19.795912880974356s"
+-                                 --delay: "-19.795912880974356s"
++                                 --dx: "-9.599754389666487px"
+-                                 --dx: "-9.599754389666487px"
++                                 --dy: "394.79602210078156px"
+-                                 --dy: "394.7960221032554px"
++                                 --pulse: "2.573187809511728s"
+-                                 --pulse: "2.573187809511728s"
++                                 --pulse-delay: "-4.714069543406367s"
+-                                 --pulse-delay: "-4.714069543406367s"
++                                 --hue: "213.75470126999608"
+-                                 --hue: "213.75470126999608"
++                                 --alpha: "0.6407566393903108"
+-                                 --alpha: "0.6407566393903108"
++                                 --blur: "0.7812563868643337px"
+-                                 --blur: "0.7812563868643337px"
+                                }}
+                              >
+                              <span>
+                              <span>
+                              <span
+                                className="collection-spark"
+                                style={{
++                                 --x: "43.1%"
+-                                 --x: "43.1%"
++                                 --y: "-6.795157106047554%"
+-                                 --y: "-6.795157106047554%"
++                                 --size: "1.1346604585858586px"
+-                                 --size: "1.1346604585858586px"
++                                 --dur: "12.152161618578248s"
+-                                 --dur: "12.152161618578248s"
++                                 --delay: "-15.190521404729225s"
+-                                 --delay: "-15.190521404729225s"
++                                 --dx: "0.7093040772670065px"
+-                                 --dx: "0.7093040772670065px"
++                                 --dy: "266.17456312509603px"
+-                                 --dy: "266.17456312509603px"
++                                 --pulse: "4.214314966025995s"
+-                                 --pulse: "4.214314966025995s"
++                                 --pulse-delay: "-1.7663534938401426s"
+-                                 --pulse-delay: "-1.7663534938401426s"
++                                 --hue: "215.47049248599797"
+-                                 --hue: "215.47049248599797"
++                                 --alpha: "0.47657031781214754"
+-                                 --alpha: "0.4765703178102558"
++                                 --blur: "0.9357076491847693px"
+-                                 --blur: "0.9357076491847693px"
+                                }}
+                              >
+                              <span>
+                              <span>
+                              <span>
+                              <span>
+                              <span>
+                              <span>
+                              <span
+                                className="collection-spark"
+                                style={{
++                                 --x: "44.4%"
+-                                 --x: "44.4%"
++                                 --y: "15.361545304418541%"
+-                                 --y: "15.361545303632738%"
++                                 --size: "1.5638049346329352px"
+-                                 --size: "1.5638049346329352px"
++                                 --dur: "20.15219274409901s"
+-                                 --dur: "20.15219274409901s"
++                                 --delay: "-21.279320758134418s"
+-                                 --delay: "-21.279320758134418s"
++                                 --dx: "14.060234522970859px"
+-                                 --dx: "14.060234522970859px"
++                                 --dy: "280.53508097320446px"
+-                                 --dy: "280.53508097320446px"
++                                 --pulse: "3.744526843285712s"
+-                                 --pulse: "3.744526843285712s"
++                                 --pulse-delay: "-0.9153048245207174s"
+-                                 --pulse-delay: "-0.9153048245207174s"
++                                 --hue: "207.18985108572087"
+-                                 --hue: "207.18985108572087"
++                                 --alpha: "0.7577253529322115"
+-                                 --alpha: "0.7577253529322115"
++                                 --blur: "0.4532679024116078px"
+-                                 --blur: "0.4532679024116078px"
+                                }}
+                              >
+                              <span
+                                className="collection-spark"
+                                style={{
++                                 --x: "92.8%"
+-                                 --x: "92.8%"
++                                 --y: "14.816315977805061%"
+-                                 --y: "14.816315977805061%"
++                                 --size: "2.551862094045282px"
+-                                 --size: "2.551862094045282px"
++                                 --dur: "13.999662520363927s"
+-                                 --dur: "13.999662520363927s"
++                                 --delay: "-12.329337609651702s"
+-                                 --delay: "-12.329337609651702s"
++                                 --dx: "-1.8529311013844563px"
+-                                 --dx: "-1.8529311013844563px"
++                                 --dy: "514.4679181199172px"
+-                                 --dy: "514.4679181199172px"
++                                 --pulse: "7.725528389721876s"
+-                                 --pulse: "7.725528389721876s"
++                                 --pulse-delay: "-1.7183581851531926s"
+-                                 --pulse-delay: "-1.7183581851531926s"
++                                 --hue: "230.68128782966232"
+-                                 --hue: "230.68128782966232"
++                                 --alpha: "0.8169202396291075"
+-                                 --alpha: "0.8169202396309992"
++                                 --blur: "0.1463267663562874px"
+-                                 --blur: "0.1463267663562874px"
+                                }}
+                              >
+                              <span>
+                              <span
+                                className="collection-spark"
+                                style={{
++                                 --x: "14.1%"
+-                                 --x: "14.1%"
++                                 --y: "83.39009978772083%"
+-                                 --y: "83.39009978772083%"
++                                 --size: "1.0989977645742328px"
+-                                 --size: "1.0989977645742328px"
++                                 --dur: "16.449202417425113s"
+-                                 --dur: "16.449202417570632s"
++                                 --delay: "-7.586142552696401s"
+-                                 --delay: "-7.586142552696401s"
++                                 --dx: "16.980644567300942px"
+-                                 --dx: "16.980644567300942px"
++                                 --dy: "501.4044476572599px"
+-                                 --dy: "501.4044476572599px"
++                                 --pulse: "7.267888251795739s"
+-                                 --pulse: "7.267888251795739s"
++                                 --pulse-delay: "-0.8531785798913916s"
+-                                 --pulse-delay: "-0.8531785798913916s"
++                                 --hue: "200.59663495268614"
+-                                 --hue: "200.59663495268614"
++                                 --alpha: "0.5497123709890002"
+-                                 --alpha: "0.5497123709890002"
++                                 --blur: "0.9485454087913241px"
+-                                 --blur: "0.9485454087913241px"
+                                }}
+                              >
+                              <span
+                                className="collection-spark"
+                                style={{
++                                 --x: "53%"
+-                                 --x: "53%"
++                                 --y: "-15.318619551526353%"
+-                                 --y: "-15.318619551526353%"
++                                 --size: "0.7029168810629925px"
+-                                 --size: "0.7029168810629925px"
++                                 --dur: "10.976886905991705s"
+-                                 --dur: "10.976886905991705s"
++                                 --delay: "-12.914101167625631s"
+-                                 --delay: "-12.914101167625631s"
++                                 --dx: "8.330488934305322px"
+-                                 --dx: "8.330488934305322px"
++                                 --dy: "478.5011741738708px"
+-                                 --dy: "478.5011741738708px"
++                                 --pulse: "3.0368535611210974s"
+-                                 --pulse: "3.0368535611458354s"
++                                 --pulse-delay: "-4.193366178369615s"
+-                                 --pulse-delay: "-4.193366178369615s"
++                                 --hue: "200.45555891330878"
+-                                 --hue: "200.45555891330878"
++                                 --alpha: "0.6022049893435177"
+-                                 --alpha: "0.6022049893435177"
++                                 --blur: "0.2655491359109874px"
+-                                 --blur: "0.2655491359109874px"
+                                }}
+                              >
+                              <span>
+                              <span>
+                              <span>
+                              <span>
+                              <span>
+                              <span>
+                              <span
+                                className="collection-spark"
+                                style={{
++                                 --x: "49%"
+-                                 --x: "49%"
++                                 --y: "79.73675222010934%"
+-                                 --y: "79.73675221932353%"
++                                 --size: "1.0693953313311795px"
+-                                 --size: "1.0693953313311795px"
++                                 --dur: "21.22376345723751s"
+-                                 --dur: "21.22376345723751s"
++                                 --delay: "-4.934809773490997s"
+-                                 --delay: "-4.934809773490997s"
++                                 --dx: "-3.6173953640973195px"
+-                                 --dx: "-3.6173953640973195px"
++                                 --dy: "225.0415493028413px"
+-                                 --dy: "225.04154930407822px"
++                                 --pulse: "5.93914731273253s"
+-                                 --pulse: "5.93914731273253s"
++                                 --pulse-delay: "-2.6027746641193517s"
+-                                 --pulse-delay: "-2.6027746641193517s"
++                                 --hue: "212.0575510559138"
+-                                 --hue: "212.0575510559138"
++                                 --alpha: "0.5543799437409325"
+-                                 --alpha: "0.5543799437409325"
++                                 --blur: "0.3790016871153057px"
+-                                 --blur: "0.3790016871153057px"
+                                }}
+                              >
+                              <span
+                                className="collection-spark"
+                                style={{
++                                 --x: "26.4%"
+-                                 --x: "26.4%"
++                                 --y: "84.2353370845376%"
+-                                 --y: "84.2353370849305%"
++                                 --size: "1.0446790504936871px"
+-                                 --size: "1.0446790504936871px"
++                                 --dur: "13.248651605972555s"
+-                                 --dur: "13.248651605972555s"
++                                 --delay: "-11.433848930770182s"
+-                                 --delay: "-11.433848930770182s"
++                                 --dx: "17.781256163259968px"
+-                                 --dx: "17.781256163259968px"
++                                 --dy: "431.7519819753943px"
+-                                 --dy: "431.7519819753943px"
++                                 --pulse: "5.442640328147536s"
+-                                 --pulse: "5.442640328147536s"
++                                 --pulse-delay: "-4.2962092156631115s"
+-                                 --pulse-delay: "-4.2962092156631115s"
++                                 --hue: "202.75678172644984"
+-                                 --hue: "202.75678172644984"
++                                 --alpha: "0.8504633107733571"
+-                                 --alpha: "0.8504633107733571"
++                                 --blur: "0.9375763556792663px"
+-                                 --blur: "0.9375763556792663px"
+                                }}
+                              >
+                              <span
+                                className="collection-spark"
+                                style={{
++                                 --x: "93.3%"
+-                                 --x: "93.3%"
++                                 --y: "66.39352619813872%"
+-                                 --y: "66.39352619813872%"
++                                 --size: "1.137939917341282px"
+-                                 --size: "1.137939917341282px"
++                                 --dur: "22.125880597914147s"
+-                                 --dur: "22.125880597914147s"
++                                 --delay: "-18.387218499279697s"
+-                                 --delay: "-18.387218499279697s"
++                                 --dx: "-0.8141474610019941px"
+-                                 --dx: "-0.8141474610019941px"
++                                 --dy: "387.230102624344px"
+-                                 --dy: "387.230102624344px"
++                                 --pulse: "5.162774446827825s"
+-                                 --pulse: "5.162774446877302s"
++                                 --pulse-delay: "-1.3252548914078943s"
+-                                 --pulse-delay: "-1.3252548914078943s"
++                                 --hue: "208.7466278845386"
+-                                 --hue: "208.7466278845386"
++                                 --alpha: "0.5697646772180451"
+-                                 --alpha: "0.5697646772180451"
++                                 --blur: "0.1639033496105185px"
+-                                 --blur: "0.1639033496105185px"
+                                }}
+                              >
+                              <span
+                                className="collection-spark"
+                                style={{
++                                 --x: "7.9%"
+-                                 --x: "7.9%"
++                                 --y: "-7.337852357773954%"
+-                                 --y: "-7.337852357773954%"
++                                 --size: "2.3249865538825363px"
+-                                 --size: "2.3249865538825363px"
++                                 --dur: "23.634854934789473s"
+-                                 --dur: "23.634854934789473s"
++                                 --delay: "-15.673992429175996s"
+-                                 --delay: "-15.673992429336067s"
++                                 --dx: "-10.201645782904961px"
+-                                 --dx: "-10.201645782904961px"
++                                 --dy: "437.4138921816484px"
+-                                 --dy: "437.4138921816484px"
++                                 --pulse: "5.783317124360474s"
+-                                 --pulse: "5.783317124360474s"
++                                 --pulse-delay: "-3.5998852235570666s"
+-                                 --pulse-delay: "-3.5998852235570666s"
++                                 --hue: "223.98761570338684"
+-                                 --hue: "223.98761570338684"
++                                 --alpha: "0.49173448965564603"
+-                                 --alpha: "0.49173448965564603"
++                                 --blur: "0.34568715441569114px"
+-                                 --blur: "0.34568715441569114px"
+                                }}
+                              >
+                              <span>
+                              <span
+                                className="collection-spark"
+                                style={{
++                                 --x: "49.8%"
+-                                 --x: "49.8%"
++                                 --y: "26.10547034179035%"
+-                                 --y: "26.10547034179035%"
++                                 --size: "1.9733076499389426px"
+-                                 --size: "1.9733076499389426px"
++                                 --dur: "12.87790600075823s"
+-                                 --dur: "12.87790600075823s"
++                                 --delay: "-0.5926140249030141s"
+-                                 --delay: "-0.5926140249030141s"
++                                 --dx: "-10.151592138659908px"
+-                                 --dx: "-10.151592138659908px"
++                                 --dy: "211.68756437385582px"
+-                                 --dy: "211.68756437385582px"
++                                 --pulse: "8.839509781757078s"
+-                                 --pulse: "8.839509781757078s"
++                                 --pulse-delay: "-3.2928948387416312s"
+-                                 --pulse-delay: "-3.2928948387416312s"
++                                 --hue: "224.49279243200726"
+-                                 --hue: "224.49279243200726"
++                                 --alpha: "0.7821103287214282"
+-                                 --alpha: "0.7821103287214282"
++                                 --blur: "0.90273222392334px"
+-                                 --blur: "0.9027322239271598px"
+                                }}
+                              >
+                              <span>
+                              <span>
+                              <span>
+                              <span>
+                              <span>
+                              <span>
+                              <span>
+                              <span>
+                              <span>
+                              <span>
+                              <span>
+                              <span>
+                              <span>
+                              <span>
+                              <span>
+                              <span>
+                              <span>
+                              <span>
+                              <span>
+                              <span
+                                className="collection-spark"
+                                style={{
++                                 --x: "0.1%"
+-                                 --x: "0.1%"
++                                 --y: "-4.154423412706819%"
+-                                 --y: "-4.1544234125103685%"
++                                 --size: "1.3717282791725665px"
+-                                 --size: "1.3717282791725665px"
++                                 --dur: "17.632850974041503s"
+-                                 --dur: "17.632850974041503s"
++                                 --delay: "-9.691187215292302s"
+-                                 --delay: "-9.691187215292302s"
++                                 --dx: "-17.833141111543227px"
+-                                 --dx: "-17.833141111543227px"
++                                 --dy: "207.2797537410588px"
+-                                 --dy: "207.2797537410588px"
++                                 --pulse: "4.861975368355342s"
+-                                 --pulse: "4.861975368355342s"
++                                 --pulse-delay: "-0.8988652481639292s"
+-                                 --pulse-delay: "-0.8988652481639292s"
++                                 --hue: "219.1992250010153"
+-                                 --hue: "219.1992250010153"
++                                 --alpha: "0.789968499850911"
+-                                 --alpha: "0.789968499850911"
++                                 --blur: "0.1768020371648163px"
+-                                 --blur: "0.1768020371648163px"
+                                }}
+                              >
+                              <span>
+                              <span>
+                              <span>
+                              <span
+                                className="collection-spark"
+                                style={{
++                                 --x: "93.4%"
+-                                 --x: "93.4%"
++                                 --y: "46.87555487238569%"
+-                                 --y: "46.87555487238569%"
++                                 --size: "1.6073822209895297px"
+-                                 --size: "1.6073822209895297px"
++                                 --dur: "29.958934857859276s"
+-                                 --dur: "29.958934857859276s"
++                                 --delay: "-0.4550775512616383s"
+-                                 --delay: "-0.4550775512616383s"
++                                 --dx: "-13.760690297669498px"
+-                                 --dx: "-13.760690297669498px"
++                                 --dy: "291.7943917697994px"
+-                                 --dy: "291.7943917697994px"
++                                 --pulse: "8.266877178505819s"
+-                                 --pulse: "8.266877178505819s"
++                                 --pulse-delay: "-2.719505343302444s"
+-                                 --pulse-delay: "-2.719505343302444s"
++                                 --hue: "213.88279682778375"
+-                                 --hue: "213.88279682778375"
++                                 --alpha: "0.3997792381174076"
+-                                 --alpha: "0.3997792381174076"
++                                 --blur: "0.8064179237029748px"
+-                                 --blur: "0.806417923695335px"
+                                }}
+                              >
+                              <span
+                                className="collection-spark"
+                                style={{
++                                 --x: "27%"
+-                                 --x: "27%"
++                                 --y: "61.71364412899129%"
+-                                 --y: "61.71364412899129%"
++                                 --size: "1.047935360732663px"
+-                                 --size: "1.047935360732663px"
++                                 --dur: "26.675662674824707s"
+-                                 --dur: "26.675662674824707s"
++                                 --delay: "-18.251417312741978s"
+-                                 --delay: "-18.251417312741978s"
++                                 --dx: "10.058276310592191px"
+-                                 --dx: "10.058276310592191px"
++                                 --dy: "269.4280607581095px"
+-                                 --dy: "269.4280607581095px"
++                                 --pulse: "7.9286439285780945s"
+-                                 --pulse: "7.9286439285780945s"
++                                 --pulse-delay: "-2.3875952992239036s"
+-                                 --pulse-delay: "-2.387595299187524s"
++                                 --hue: "211.7289228700829"
+-                                 --hue: "211.7289228700829"
++                                 --alpha: "0.6993973796439241"
+-                                 --alpha: "0.6993973796439241"
++                                 --blur: "0.13553719355786598px"
+-                                 --blur: "0.13553719355786598px"
+                                }}
+                              >
+                              <span>
+                              <span
+                                className="collection-spark"
+                                style={{
++                                 --x: "81.4%"
+-                                 --x: "81.4%"
++                                 --y: "-5.23792916291859%"
+-                                 --y: "-5.23792916291859%"
++                                 --size: "2.3753554819433704px"
+-                                 --size: "2.3753554819433704px"
++                                 --dur: "22.67075285446481s"
+-                                 --dur: "22.67075285446481s"
++                                 --delay: "-17.314306032276363s"
+-                                 --delay: "-17.314306032276363s"
++                                 --dx: "14.583115310553694px"
+-                                 --dx: "14.583115310553694px"
++                                 --dy: "406.8464711077104px"
+-                                 --dy: "406.8464711077104px"
++                                 --pulse: "3.429242625759798s"
+-                                 --pulse: "3.429242625759798s"
++                                 --pulse-delay: "-4.322357531382295s"
+-                                 --pulse-delay: "-4.322357531382295s"
++                                 --hue: "233.76279567020538"
+-                                 --hue: "233.76279567020538"
++                                 --alpha: "0.36809998949305733"
+-                                 --alpha: "0.3680999894949491"
++                                 --blur: "0.8631501981270958px"
+-                                 --blur: "0.8631501981270958px"
+                                }}
+                              >
+                              <span>
+                              <span>
+                              <span>
+                              <span>
+                              <span
+                                className="collection-spark"
+                                style={{
++                                 --x: "14.4%"
+-                                 --x: "14.4%"
++                                 --y: "77.11932411274756%"
+-                                 --y: "77.11932411274756%"
++                                 --size: "2.290801091506px"
+-                                 --size: "2.290801091506px"
++                                 --dur: "12.229339748519124s"
+-                                 --dur: "12.229339748519124s"
++                                 --delay: "-15.948522320235497s"
+-                                 --delay: "-15.948522320235497s"
++                                 --dx: "11.224041991834383px"
+-                                 --dx: "11.224041991834383px"
++                                 --dy: "268.99055205096374px"
+-                                 --dy: "268.99055205096374px"
++                                 --pulse: "7.468757975198969s"
+-                                 --pulse: "7.468757975198969s"
++                                 --pulse-delay: "-1.0026482803732506s"
+-                                 --pulse-delay: "-1.0026482803732506s"
++                                 --hue: "228.99396474630294"
+-                                 --hue: "228.99396474630294"
++                                 --alpha: "0.3830397551121314"
+-                                 --alpha: "0.3830397551118949"
++                                 --blur: "0.795781548343075px"
+-                                 --blur: "0.795781548343075px"
+                                }}
+                              >
+                              <span
+                                className="collection-spark"
+                                style={{
++                                 --x: "80.8%"
+-                                 --x: "80.8%"
++                                 --y: "-1.3551388753694482%"
+-                                 --y: "-1.3551388753694482%"
++                                 --size: "1.0527312584839819px"
+-                                 --size: "1.0527312584839819px"
++                                 --dur: "22.856571920856368s"
+-                                 --dur: "22.856571920856368s"
++                                 --delay: "-2.023480941003072s"
+-                                 --delay: "-2.023480941003072s"
++                                 --dx: "6.746588159967359px"
+-                                 --dx: "6.746588160000101px"
++                                 --dy: "203.40025652185432px"
+-                                 --dy: "203.40025652185432px"
++                                 --pulse: "3.5629232601415426s"
+-                                 --pulse: "3.5629232601415426s"
++                                 --pulse-delay: "-4.316455976058933s"
+-                                 --pulse-delay: "-4.316455976058933s"
++                                 --hue: "212.43851913582694"
+-                                 --hue: "212.43851913582694"
++                                 --alpha: "0.6075172895353171"
+-                                 --alpha: "0.6075172895353171"
++                                 --blur: "0.7099187161464215px"
+-                                 --blur: "0.7099187161464215px"
+                                }}
+                              >
+                              <span>
+                              <span
+                                className="collection-spark"
+                                style={{
++                                 --x: "19.6%"
+-                                 --x: "19.6%"
++                                 --y: "-7.798970066854963%"
+-                                 --y: "-7.798970066854963%"
++                                 --size: "0.8220118628974887px"
+-                                 --size: "0.8220118628974887px"
++                                 --dur: "11.705866296833847s"
+-                                 --dur: "11.705866296688328s"
++                                 --delay: "-17.415749555839284s"
+-                                 --delay: "-17.415749555839284s"
++                                 --dx: "-17.917149425818934px"
+-                                 --dx: "-17.917149425818934px"
++                                 --dy: "430.0437349517597px"
+-                                 --dy: "430.0437349517597px"
++                                 --pulse: "4.1919138798199125s"
+-                                 --pulse: "4.1919138798199125s"
++                                 --pulse-delay: "-3.299733343301341s"
+-                                 --pulse-delay: "-3.299733343301341s"
++                                 --hue: "219.60944233751798"
+-                                 --hue: "219.60944233751798"
++                                 --alpha: "0.8040250139980344"
+-                                 --alpha: "0.8040250139980344"
++                                 --blur: "0.883964784143791px"
+-                                 --blur: "0.883964784143791px"
+                                }}
+                              >
+                              <span>
+                              <span>
+                              <span
+                                className="collection-spark"
+                                style={{
++                                 --x: "76.9%"
+-                                 --x: "76.9%"
++                                 --y: "-12.582777540184907%"
+-                                 --y: "-12.582777540184907%"
++                                 --size: "1.2890204262678935px"
+-                                 --size: "1.2890204262678935px"
++                                 --dur: "24.850258913938887s"
+-                                 --dur: "24.850258913938887s"
++                                 --delay: "-2.9531658256964874s"
+-                                 --delay: "-2.9531658256964874s"
++                                 --dx: "16.76714967811131px"
+-                                 --dx: "16.767149677849375px"
++                                 --dy: "211.80065220978577px"
+-                                 --dy: "211.80065220978577px"
++                                 --pulse: "5.1721087759331565s"
+-                                 --pulse: "5.1721087759331565s"
++                                 --pulse-delay: "-4.318319174089993s"
+-                                 --pulse-delay: "-4.318319174089993s"
++                                 --hue: "223.1931042864162"
+-                                 --hue: "223.1931042864162"
++                                 --alpha: "0.6253631983042578"
+-                                 --alpha: "0.6253631983042578"
++                                 --blur: "0.3972476747265319px"
+-                                 --blur: "0.3972476747265319px"
+                                }}
+                              >
+                              <span
+                                className="collection-spark"
+                                style={{
++                                 --x: "86.6%"
+-                                 --x: "86.6%"
++                                 --y: "22.643017554113612%"
+-                                 --y: "22.643017554113612%"
++                                 --size: "2.4077072769738153px"
+-                                 --size: "2.4077072769738153px"
++                                 --dur: "24.113625906029483s"
+-                                 --dur: "24.113625905883964s"
++                                 --delay: "-12.644380423866096s"
+-                                 --delay: "-12.644380424026167s"
++                                 --dx: "16.711890423990553px"
+-                                 --dx: "16.711890423990553px"
++                                 --dy: "392.5477052959468px"
+-                                 --dy: "392.5477052959468px"
++                                 --pulse: "8.401756970217683s"
+-                                 --pulse: "8.401756970217683s"
++                                 --pulse-delay: "-3.995317020219318s"
+-                                 --pulse-delay: "-3.995317020219318s"
++                                 --hue: "198.86684998736018"
+-                                 --hue: "198.86684998736018"
++                                 --alpha: "0.6177358500634728"
+-                                 --alpha: "0.6177358500634728"
++                                 --blur: "0.33856755329616134px"
+-                                 --blur: "0.33856755329616134px"
+                                }}
+                              >
+                              <span>
+                              <span
+                                className="collection-spark"
+                                style={{
++                                 --x: "72.3%"
+-                                 --x: "72.3%"
++                                 --y: "63.60939205411705%"
+-                                 --y: "63.60939205411705%"
++                                 --size: "2.758348303931416px"
+-                                 --size: "2.758348303931416px"
++                                 --dur: "23.2282711105654s"
+-                                 --dur: "23.2282711105654s"
++                                 --delay: "-4.103109682851937s"
+-                                 --delay: "-4.103109682851937s"
++                                 --dx: "-6.188343904417707px"
+-                                 --dx: "-6.188343904417707px"
++                                 --dy: "341.30399181944085px"
+-                                 --dy: "341.30399181944085px"
++                                 --pulse: "2.7436694236155743s"
+-                                 --pulse: "2.7436694236155743s"
++                                 --pulse-delay: "-1.6380211682553636s"
+-                                 --pulse-delay: "-1.6380211682553636s"
++                                 --hue: "217.82585822276087"
+-                                 --hue: "217.82585822276087"
++                                 --alpha: "0.5220744755517808"
+-                                 --alpha: "0.5220744755479972"
++                                 --blur: "0.7134290306879848px"
+-                                 --blur: "0.7134290306879848px"
+                                }}
+                              >
+                              <span>
+                              <span
+                                className="collection-spark"
+                                style={{
++                                 --x: "92.9%"
+-                                 --x: "92.9%"
++                                 --y: "31.267712454660796%"
+-                                 --y: "31.267712454660796%"
++                                 --size: "1.3646255784460664px"
+-                                 --size: "1.3646255784384267px"
++                                 --dur: "21.486783264408587s"
+-                                 --dur: "21.486783264408587s"
++                                 --delay: "-2.1417927360926114s"
+-                                 --delay: "-2.1417927360926114s"
++                                 --dx: "13.138325177802471px"
+-                                 --dx: "13.138325177802471px"
++                                 --dy: "408.85754225353594px"
+-                                 --dy: "408.85754225353594px"
++                                 --pulse: "6.466630221888773s"
+-                                 --pulse: "6.466630221888773s"
++                                 --pulse-delay: "-4.576985941785097s"
+-                                 --pulse-delay: "-4.576985941785097s"
++                                 --hue: "220.24030652172223"
+-                                 --hue: "220.24030652172223"
++                                 --alpha: "0.8144853769954352"
+-                                 --alpha: "0.8144853769954352"
++                                 --blur: "0.45837621237114945px"
+-                                 --blur: "0.45837621237114945px"
+                                }}
+                              >
+                              <span>
+                              <span
+                                className="collection-spark"
+                                style={{
++                                 --x: "48.1%"
+-                                 --x: "48.1%"
++                                 --y: "65.66518341106712%"
+-                                 --y: "65.66518341106712%"
++                                 --size: "0.9182433229838352px"
+-                                 --size: "0.9182433229838352px"
++                                 --dur: "23.74842614523004s"
+-                                 --dur: "23.74842614523004s"
++                                 --delay: "-14.368582707982569s"
+-                                 --delay: "-14.368582707982569s"
++                                 --dx: "-3.550974397927348px"
+-                                 --dx: "-3.550974397927348px"
++                                 --dy: "462.60557793784756px"
+-                                 --dy: "462.60557793784756px"
++                                 --pulse: "2.966949605461559s"
+-                                 --pulse: "2.966949605461559s"
++                                 --pulse-delay: "-0.9261254979810474s"
+-                                 --pulse-delay: "-0.9261254979810474s"
++                                 --hue: "202.09886531210213"
+-                                 --hue: "202.09886531210213"
++                                 --alpha: "0.6739524133031956"
+-                                 --alpha: "0.6739524132994119"
++                                 --blur: "0.38812424329996703px"
+-                                 --blur: "0.38812424329996703px"
+                                }}
+                              >
+                              <span>
+                              <span
+                                className="collection-spark"
+                                style={{
++                                 --x: "1.7%"
+-                                 --x: "1.7%"
++                                 --y: "-11.212075904128142%"
+-                                 --y: "-11.212075904128142%"
++                                 --size: "1.895976078984495px"
+-                                 --size: "1.895976078984495px"
++                                 --dur: "10.718728991123498s"
+-                                 --dur: "10.718728991123498s"
++                                 --delay: "-12.116716167860432s"
+-                                 --delay: "-12.116716167860432s"
++                                 --dx: "2.6597979049547575px"
+-                                 --dx: "2.6597979049547575px"
++                                 --dy: "273.62065083449124px"
+-                                 --dy: "273.62065083696507px"
++                                 --pulse: "7.591426486405544s"
+-                                 --pulse: "7.591426486405544s"
++                                 --pulse-delay: "-3.753594289373723s"
+-                                 --pulse-delay: "-3.753594289373723s"
++                                 --hue: "204.59453826343815"
+-                                 --hue: "204.59453826343815"
++                                 --alpha: "0.8189621079404605"
+-                                 --alpha: "0.8189621079404605"
++                                 --blur: "0.5860780906125002px"
+-                                 --blur: "0.5860780906125002px"
+                                }}
+                              >
+                              <span
+                                className="collection-spark"
+                                style={{
++                                 --x: "8.2%"
+-                                 --x: "8.2%"
++                                 --y: "73.63002688369306%"
+-                                 --y: "73.63002688369306%"
++                                 --size: "1.9857058426830918px"
+-                                 --size: "1.9857058426830918px"
++                                 --dur: "23.693047025371925s"
+-                                 --dur: "23.693047025371925s"
++                                 --delay: "-16.011204131296836s"
+-                                 --delay: "-16.011204131296836s"
++                                 --dx: "-14.582381359417923px"
+-                                 --dx: "-14.582381359417923px"
++                                 --dy: "406.63897189275303px"
+-                                 --dy: "406.63897189275303px"
++                                 --pulse: "4.0311327004077615s"
+-                                 --pulse: "4.0311327004572375s"
++                                 --pulse-delay: "-3.9272097968205344s"
+-                                 --pulse-delay: "-3.9272097968205344s"
++                                 --hue: "223.9741240346484"
+-                                 --hue: "223.9741240346484"
++                                 --alpha: "0.5372175903331299"
+-                                 --alpha: "0.5372175903331299"
++                                 --blur: "0.6156582624866133px"
+-                                 --blur: "0.6156582624866133px"
+                                }}
+                              >
+                              <span>
+                              <span>
+                              <span>
+                              <span>
+                              <span
+                                className="collection-spark"
+                                style={{
++                                 --x: "52.3%"
+-                                 --x: "52.3%"
++                                 --y: "1.1431987053947523%"
+-                                 --y: "1.1431987053947523%"
++                                 --size: "0.8666105583823082px"
+-                                 --size: "0.8666105583899479px"
++                                 --dur: "11.214402894929663s"
+-                                 --dur: "11.214402894929663s"
++                                 --delay: "-13.198484794454998s"
+-                                 --delay: "-13.198484794454998s"
++                                 --dx: "-17.170413160449243px"
+-                                 --dx: "-17.170413160449243px"
++                                 --dy: "290.7937065388978px"
+-                                 --dy: "290.7937065388978px"
++                                 --pulse: "5.552229710268147s"
+-                                 --pulse: "5.552229710268147s"
++                                 --pulse-delay: "-3.6899544834523113s"
+-                                 --pulse-delay: "-3.6899544834523113s"
++                                 --hue: "230.86447568684525"
+-                                 --hue: "230.86447568684525"
++                                 --alpha: "0.49404778265627103"
+-                                 --alpha: "0.49404778265627103"
++                                 --blur: "0.3675812483015761px"
+-                                 --blur: "0.3675812483015761px"
+                                }}
+                              >
+                              <span
+                                className="collection-spark"
+                                style={{
++                                 --x: "25.2%"
+-                                 --x: "25.2%"
++                                 --y: "53.42725407681428%"
+-                                 --y: "53.42725407681428%"
++                                 --size: "1.8898982012797205px"
+-                                 --size: "1.889898201264441px"
++                                 --dur: "21.959690192743437s"
+-                                 --dur: "21.959690192743437s"
++                                 --delay: "-12.840546671126503s"
+-                                 --delay: "-12.840546671126503s"
++                                 --dx: "14.051237970714283px"
+-                                 --dx: "14.051237970714283px"
++                                 --dy: "439.99048501871584px"
+-                                 --dy: "439.99048501871584px"
++                                 --pulse: "3.52847452666465s"
+-                                 --pulse: "3.52847452666465s"
++                                 --pulse-delay: "-2.5880489271730767s"
+-                                 --pulse-delay: "-2.5880489271730767s"
++                                 --hue: "210.7968576407584"
+-                                 --hue: "210.7968576407584"
++                                 --alpha: "0.6026901817630278"
+-                                 --alpha: "0.6026901817630278"
++                                 --blur: "0.4974691024875938px"
+-                                 --blur: "0.4974691024875938px"
+                                }}
+                              >
+                              <span>
+                              <span>
+                              <span>
+                              <span>
+                              <span>
+                              <span>
+                              <span>
+                              <span>
+                              <span
+                                className="collection-spark"
+                                style={{
++                                 --x: "74.6%"
+-                                 --x: "74.6%"
++                                 --y: "-11.510390913899755%"
+-                                 --y: "-11.510390913899755%"
++                                 --size: "0.8793749932810897px"
+-                                 --size: "0.8793749932810897px"
++                                 --dur: "24.15789397979097s"
+-                                 --dur: "24.15789397979097s"
++                                 --delay: "-5.127999908072525s"
+-                                 --delay: "-5.127999908072525s"
++                                 --dx: "-6.051517947547836px"
+-                                 --dx: "-6.051517947547836px"
++                                 --dy: "393.4057042126369px"
+-                                 --dy: "393.4057042126369px"
++                                 --pulse: "2.5453129492670996s"
+-                                 --pulse: "2.5453129492670996s"
++                                 --pulse-delay: "-1.5137023312490783s"
+-                                 --pulse-delay: "-1.5137023312490783s"
++                                 --hue: "232.742889316105"
+-                                 --hue: "232.74288931624324"
++                                 --alpha: "0.40242788024042964"
+-                                 --alpha: "0.40242788024042964"
++                                 --blur: "0.7648916842325889px"
+-                                 --blur: "0.7648916842325889px"
+                                }}
+                              >
+                              <span
+                                className="collection-spark"
+                                style={{
++                                 --x: "50.4%"
+-                                 --x: "50.4%"
++                                 --y: "74.31924887682544%"
+-                                 --y: "74.31924887682544%"
++                                 --size: "1.656263099089847px"
+-                                 --size: "1.656263099089847px"
++                                 --dur: "12.303272047865903s"
+-                                 --dur: "12.303272047865903s"
++                                 --delay: "-1.918911620225117s"
+-                                 --delay: "-1.918911620225117s"
++                                 --dx: "-6.551026033092057px"
+-                                 --dx: "-6.551026033092057px"
++                                 --dy: "231.7114962668711px"
+-                                 --dy: "231.71149626810802px"
++                                 --pulse: "4.752278001781088s"
+-                                 --pulse: "4.752278001781088s"
++                                 --pulse-delay: "-2.911581770204066s"
+-                                 --pulse-delay: "-2.911581770204066s"
++                                 --hue: "206.31299015451805"
+-                                 --hue: "206.31299015451805"
++                                 --alpha: "0.4455806517652309"
+-                                 --alpha: "0.4455806517652309"
++                                 --blur: "0.3579226263869714px"
+-                                 --blur: "0.3579226263869714px"
+                                }}
+                              >
+                              <span>
+                              <span
+                                className="collection-spark"
+                                style={{
++                                 --x: "2.2%"
+-                                 --x: "2.2%"
++                                 --y: "21.625153842003783%"
+-                                 --y: "21.625153842003783%"
++                                 --size: "1.2388508001771696px"
+-                                 --size: "1.2388508001771696px"
++                                 --dur: "17.70566895198499s"
+-                                 --dur: "17.70566895198499s"
++                                 --delay: "-19.58480000606869s"
+-                                 --delay: "-19.58480000606869s"
++                                 --dx: "-4.289580377066159px"
+-                                 --dx: "-4.289580377066159px"
++                                 --dy: "187.88459283823613px"
+-                                 --dy: "187.88459283823613px"
++                                 --pulse: "2.6139841670631085s"
+-                                 --pulse: "2.6139841670631085s"
++                                 --pulse-delay: "-3.4078015706109s"
+-                                 --pulse-delay: "-3.4078015706109s"
++                                 --hue: "219.96908526628977"
+-                                 --hue: "219.96908526628977"
++                                 --alpha: "0.8162633355506114"
+-                                 --alpha: "0.8162633355506114"
++                                 --blur: "0.24359450644660685px"
+-                                 --blur: "0.24359450644278696px"
+                                }}
+                              >
+                              <span>
+                              <span>
+                              <span>
+                              <span>
+                              <span>
+                              <span
+                                className="collection-spark"
+                                style={{
++                                 --x: "18.1%"
+-                                 --x: "18.1%"
++                                 --y: "-14.821531697860337%"
+-                                 --y: "-14.821531697860337%"
++                                 --size: "2.2417454607370018px"
+-                                 --size: "2.2417454607370018px"
++                                 --dur: "10.258616189385066s"
+-                                 --dur: "10.258616189385066s"
++                                 --delay: "-0.6361888414612622s"
+-                                 --delay: "-0.6361888414612622s"
++                                 --dx: "15.617250014649471px"
+-                                 --dx: "15.617250014649471px"
++                                 --dy: "419.4169830602186px"
+-                                 --dy: "419.4169830577448px"
++                                 --pulse: "5.295810356977745s"
+-                                 --pulse: "5.295810356977745s"
++                                 --pulse-delay: "-2.269766891349718s"
+-                                 --pulse-delay: "-2.269766891349718s"
++                                 --hue: "221.80263961521268"
+-                                 --hue: "221.80263961521268"
++                                 --alpha: "0.7715652347005744"
+-                                 --alpha: "0.7715652347005744"
++                                 --blur: "0.23239376324891056px"
+-                                 --blur: "0.23239376324891056px"
+                                }}
+                              >
+                              <span
+                                className="collection-spark"
+                                style={{
++                                 --x: "38.9%"
+-                                 --x: "38.9%"
++                                 --y: "48.65144698639051%"
+-                                 --y: "48.65144698639051%"
++                                 --size: "2.1140595540538927px"
+-                                 --size: "2.1140595540462526px"
++                                 --dur: "21.218131063360488s"
+-                                 --dur: "21.218131063360488s"
++                                 --delay: "-13.114535635348147s"
+-                                 --delay: "-13.114535635328139s"
++                                 --dx: "3.3625931637652684px"
+-                                 --dx: "3.3625931637652684px"
++                                 --dy: "213.19293160289817px"
+-                                 --dy: "213.19293160289817px"
++                                 --pulse: "8.761216064210748s"
+-                                 --pulse: "8.761216064210748s"
++                                 --pulse-delay: "-3.657309236805304s"
+-                                 --pulse-delay: "-3.657309236805304s"
++                                 --hue: "207.6738895124945"
+-                                 --hue: "207.6738895124945"
++                                 --alpha: "0.718896025007125"
+-                                 --alpha: "0.718896025007125"
++                                 --blur: "0.21076602681171153px"
+-                                 --blur: "0.21076602681171153px"
+                                }}
+                              >
+                              ...
+                            ...
+                        ...
+                    ...
+            ...
+          ...
+
+[00:00:03.799] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
+[00:00:03.799] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/","route":"/"}
+[00:00:03.799] Browser LOG     %c[Vercel Web Analytics]%c [view] http://localhost:3000/#about color: rgb(120, 120, 120) color: inherit {"dp":"/","o":"http://localhost:3000/#about","sdkn":"@vercel/analytics/next","sdkv":"1.6.1","sv":"0.1.3","ts":1773742581449} /_vercel/insights/view

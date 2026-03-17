@@ -22,7 +22,10 @@ export function Contact() {
   }
 
   return (
-    <section id="contact" className="py-24 lg:py-32 px-6 bg-card">
+    <section id="contact" className="relative py-24 lg:py-32 px-6 bg-card overflow-hidden">
+      <div aria-hidden className="pointer-events-none absolute inset-x-0 top-0 h-20 sm:h-24 bg-gradient-to-b from-background to-transparent z-[2]" />
+      <div aria-hidden className="pointer-events-none absolute inset-x-0 bottom-0 h-20 sm:h-24 bg-gradient-to-t from-background to-transparent z-[2]" />
+
       <div className="max-w-7xl mx-auto">
         <div className="grid lg:grid-cols-2 gap-16 lg:gap-24">
           {/* Contact Info */}

@@ -1,23 +1,72 @@
 "use client"
 
-import { useCallback } from "react"
+import { useCallback, useEffect, useRef, useState } from "react"
 import Image from "next/image"
 import { ArrowRight, ArrowLeft, ArrowDown } from "lucide-react"
 import { useArtworkModal, artworks } from "./artwork-modal-context"
 
 export function Hero() {
-  const { heroArtwork, selectHeroArtwork, openModal } = useArtworkModal()
+  const { selectHeroArtwork, openModal } = useArtworkModal()
+  const lastInteractionAt = useRef<number>(Date.now())
+  const lastScrollY = useRef<number>(0)
+  const lastSyncedIndexOnScrollDown = useRef<number>(-1)
+  const [currentIndex, setCurrentIndex] = useState(0)
 
-  const currentIndex = artworks.findIndex(a => a.id === heroArtwork.id)
+  const AUTOPLAY_MS = 2800
+  const PAUSE_AFTER_INTERACTION_MS = 7500
 
-  const nextSlide = useCallback(() => {
+  const markInteraction = () => {
+    lastInteractionAt.current = Date.now()
+  }
+
+  const setSlideByIndex = useCallback((index: number, userInitiated = false) => {
+    const normalizedIndex = (index + artworks.length) % artworks.length
+    setCurrentIndex(normalizedIndex)
+    if (userInitiated) {
+      markInteraction()
+    }
+  }, [])
+
+  const nextSlide = useCallback((userInitiated = false) => {
     const nextIndex = (currentIndex + 1) % artworks.length
-    selectHeroArtwork(artworks[nextIndex])
-  }, [currentIndex, selectHeroArtwork])
+    setSlideByIndex(nextIndex, userInitiated)
+  }, [currentIndex, setSlideByIndex])
 
-  const prevSlide = useCallback(() => {
+  const prevSlide = useCallback((userInitiated = false) => {
     const prevIndex = (currentIndex - 1 + artworks.length) % artworks.length
-    selectHeroArtwork(artworks[prevIndex])
+    setSlideByIndex(prevIndex, userInitiated)
+  }, [currentIndex, setSlideByIndex])
+
+  useEffect(() => {
+    const intervalId = window.setInterval(() => {
+      const idleMs = Date.now() - lastInteractionAt.current
+      if (idleMs >= PAUSE_AFTER_INTERACTION_MS) {
+        nextSlide(false)
+      }
+    }, AUTOPLAY_MS)
+
+    return () => window.clearInterval(intervalId)
+  }, [nextSlide])
+
+  useEffect(() => {
+    const onScroll = () => {
+      const currentScrollY = window.scrollY
+      const isScrollingDown = currentScrollY > lastScrollY.current + 2
+
+      if (isScrollingDown && lastSyncedIndexOnScrollDown.current !== currentIndex) {
+        selectHeroArtwork(artworks[currentIndex], { scrollToGallery: false })
+        lastSyncedIndexOnScrollDown.current = currentIndex
+      }
+
+      lastScrollY.current = currentScrollY
+    }
+
+    lastScrollY.current = window.scrollY
+    window.addEventListener("scroll", onScroll, { passive: true })
+
+    return () => {
+      window.removeEventListener("scroll", onScroll)
+    }
   }, [currentIndex, selectHeroArtwork])
 
   const getCardStyle = (index: number) => {
@@ -31,19 +80,19 @@ export function Hero() {
       }
     } else if (diff === 1) {
       return {
-        transform: "translateX(100px) translateY(20px) scale(0.88) rotateY(-10deg)",
+        transform: "translateX(82px) translateY(14px) scale(0.92) rotateY(-6deg)",
         zIndex: 20,
-        opacity: 0.75,
+        opacity: 0.82,
       }
     } else if (diff === 2) {
       return {
-        transform: "translateX(190px) translateY(40px) scale(0.76) rotateY(-15deg)",
+        transform: "translateX(156px) translateY(28px) scale(0.84) rotateY(-10deg)",
         zIndex: 10,
-        opacity: 0.5,
+        opacity: 0.62,
       }
     } else {
       return {
-        transform: "translateX(270px) translateY(60px) scale(0.64) rotateY(-20deg)",
+        transform: "translateX(218px) translateY(40px) scale(0.76) rotateY(-12deg)",
         zIndex: 0,
         opacity: 0,
       }
@@ -51,15 +100,24 @@ export function Hero() {
   }
 
   const handleCardClick = (index: number) => {
+    markInteraction()
     if (index === currentIndex) {
       openModal(artworks[index])
     } else {
-      selectHeroArtwork(artworks[index])
+      setSlideByIndex(index, true)
     }
+  }
+
+  const viewMoreDetails = () => {
+    markInteraction()
+    selectHeroArtwork(artworks[currentIndex], { scrollToGallery: true })
   }
 
   return (
     <section className="relative min-h-screen flex flex-col items-center justify-center px-4 sm:px-6 lg:px-8 pt-24 pb-16 overflow-hidden">
+      <div aria-hidden className="pointer-events-none absolute inset-x-0 top-0 h-20 sm:h-24 bg-gradient-to-b from-background via-background/80 to-transparent z-[5]" />
+      <div aria-hidden className="pointer-events-none absolute inset-x-0 bottom-0 h-24 sm:h-28 bg-gradient-to-t from-background via-background/85 to-transparent z-[5]" />
+
       <div className="absolute inset-0 z-0">
         <Image
           src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Gemini_Generated_Image_y3ww5qy3ww5qy3ww-0jKeF2DVWdGcQaYx7wgu9BsixF6Ly5.png"
@@ -92,7 +150,7 @@ export function Hero() {
             {artworks.map((artwork, index) => (
               <div
                 key={artwork.id}
-                className="absolute left-0 sm:left-4 lg:left-8 top-0 w-[280px] sm:w-[320px] md:w-[360px] lg:w-[400px] transition-all duration-700 ease-out cursor-pointer group"
+                className="absolute left-0 sm:left-4 lg:left-8 top-0 w-[280px] sm:w-[320px] md:w-[360px] lg:w-[400px] transition-[transform,opacity] duration-[1400ms] ease-[cubic-bezier(0.16,1,0.3,1)] cursor-pointer group will-change-transform"
                 style={{
                   ...getCardStyle(index),
                   transformStyle: "preserve-3d",
@@ -134,15 +192,15 @@ export function Hero() {
             </p>
             
             <button 
-              onClick={() => openModal(artworks[currentIndex])}
+              onClick={viewMoreDetails}
               className="inline-block bg-primary text-primary-foreground px-8 sm:px-12 py-4 text-sm tracking-widest uppercase font-medium hover:bg-primary/90 hover:shadow-[0_0_30px_rgba(212,175,85,0.4)] transition-all mb-10 rounded-lg shadow-lg shadow-primary/30"
             >
-              Request Private View
+              See Collection
             </button>
 
             <div className="flex items-center justify-center lg:justify-start gap-6">
               <button
-                onClick={prevSlide}
+                onClick={() => prevSlide(true)}
                 className="w-12 h-12 sm:w-14 sm:h-14 rounded-full border-2 border-primary/40 flex items-center justify-center hover:border-primary hover:bg-primary hover:text-primary-foreground hover:shadow-[0_0_20px_rgba(212,175,85,0.5)] transition-all backdrop-blur-sm bg-card/30"
                 aria-label="Previous artwork"
               >
@@ -154,7 +212,7 @@ export function Hero() {
               </span>
               
               <button
-                onClick={nextSlide}
+                onClick={() => nextSlide(true)}
                 className="w-12 h-12 sm:w-14 sm:h-14 rounded-full border-2 border-primary/40 flex items-center justify-center hover:border-primary hover:bg-primary hover:text-primary-foreground hover:shadow-[0_0_20px_rgba(212,175,85,0.5)] transition-all backdrop-blur-sm bg-card/30"
                 aria-label="Next artwork"
               >
@@ -166,7 +224,7 @@ export function Hero() {
               {artworks.map((_, index) => (
                 <button
                   key={index}
-                  onClick={() => selectHeroArtwork(artworks[index])}
+                  onClick={() => setSlideByIndex(index, true)}
                   className={`h-2 rounded-full transition-all duration-300 ${
                     index === currentIndex 
                       ? "bg-primary w-8 shadow-[0_0_10px_rgba(212,175,85,0.6)]" 
@@ -180,7 +238,7 @@ export function Hero() {
         </div>
       </div>
 
-      <div className="absolute bottom-8 left-1/2 -translate-x-1/2 flex flex-col items-center gap-2 animate-bounce z-10">
+      <div className="absolute bottom-3 sm:bottom-8 left-1/2 -translate-x-1/2 flex flex-col items-center gap-2 animate-bounce z-10">
         <span className="text-xs tracking-widest uppercase text-muted-foreground">Scroll</span>
         <ArrowDown className="w-4 h-4 text-muted-foreground" />
       </div>

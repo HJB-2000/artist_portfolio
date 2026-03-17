@@ -11,7 +11,7 @@ export function ArtworkModal() {
   return (
     <Dialog open={!!selectedArtwork} onOpenChange={closeModal}>
       {/* Redesigned Modal: Vertical Split (Phone-like) Layout */}
-      <DialogContent className="max-w-4xl w-full flex flex-col gap-0 p-0 bg-card rounded-lg border-primary/20 shadow-2xl max-h-[90vh] overflow-y-auto">
+      <DialogContent className="w-[96vw] sm:w-[94vw] lg:w-[88vw] xl:w-[82vw] max-w-6xl flex flex-col gap-0 p-0 bg-card rounded-lg border-primary/20 shadow-2xl max-h-[92vh] overflow-y-auto">
         {selectedArtwork && (
           <>
             {/* Part 1: Top - Image */}

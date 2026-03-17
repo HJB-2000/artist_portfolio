@@ -28,7 +28,10 @@ export function Testimonials() {
   const next = () => setCurrent((c) => (c === testimonials.length - 1 ? 0 : c + 1))
 
   return (
-    <section className="py-24 lg:py-32 px-6">
+    <section className="relative py-24 lg:py-32 px-6 overflow-hidden">
+      <div aria-hidden className="pointer-events-none absolute inset-x-0 top-0 h-20 sm:h-24 bg-gradient-to-b from-background via-background/85 to-transparent z-[2]" />
+      <div aria-hidden className="pointer-events-none absolute inset-x-0 bottom-0 h-20 sm:h-24 bg-gradient-to-t from-background via-background/85 to-transparent z-[2]" />
+
       <div className="max-w-4xl mx-auto text-center">
         <p className="text-sm tracking-[0.3em] uppercase text-muted-foreground mb-4">
           Recognition

@@ -11,6 +11,7 @@ export const artworks = [
     dimensions: "120x180cm",
     price: "$12,500",
     image: "/images/artwork-1.jpg",
+    images: ["/images/artwork-1.jpg"],
     description: "A striking exploration of cosmic energy and earthly connection, this piece captures the eternal dance between light and shadow."
   },
   {
@@ -21,6 +22,7 @@ export const artworks = [
     dimensions: "90x120cm",
     price: "$8,900",
     image: "/images/artwork-2.jpg",
+    images: ["/images/artwork-2.jpg"],
     description: "Organic forms emerge from a symphony of earth tones, celebrating the raw beauty found in nature's simplest elements."
   },
   {
@@ -31,6 +33,7 @@ export const artworks = [
     dimensions: "60x45x30cm",
     price: "$15,000",
     image: "/images/artwork-3.jpg",
+    images: ["/images/artwork-3.jpg"],
     description: "A sculptural meditation on permanence and change, this bronze piece speaks to the human desire for transcendence."
   },
   {
@@ -41,6 +44,7 @@ export const artworks = [
     dimensions: "150x180cm",
     price: "$18,500",
     image: "/images/artwork-4.jpg",
+    images: ["/images/artwork-4.jpg"],
     description: "Bold strokes of passion meet refined elegance in this commanding statement piece, designed for spaces that demand attention."
   },
   {
@@ -51,6 +55,7 @@ export const artworks = [
     dimensions: "100x125cm",
     price: "$9,800",
     image: "/images/artwork-5.jpg",
+    images: ["/images/artwork-5.jpg"],
     description: "A contemplative landscape that invites viewers to find stillness, capturing the ethereal quality of dawn mist in the highlands."
   },
   {
@@ -61,6 +66,7 @@ export const artworks = [
     dimensions: "75x100cm",
     price: "$7,200",
     image: "/images/artwork-6.jpg",
+    images: ["/images/artwork-6.jpg"],
     description: "The intersection of mathematics and emotion, this architectural piece explores the beauty found in precise angles and warm metallics."
   }
 ]
@@ -71,30 +77,50 @@ interface ArtworkModalContextType {
   selectedArtwork: Artwork | null
   openModal: (artwork: Artwork) => void
   closeModal: () => void
+  selectedItemForPreview: Artwork | null
+  openItemPreview: (artwork: Artwork) => void
+  closeItemPreview: () => void
   heroArtwork: Artwork
-  selectHeroArtwork: (artwork: Artwork) => void
+  selectHeroArtwork: (artwork: Artwork, options?: { scrollToGallery?: boolean }) => void
 }
 
 const ArtworkModalContext = createContext<ArtworkModalContextType | undefined>(undefined)
 
 export function ArtworkModalProvider({ children }: { children: ReactNode }) {
   const [selectedArtwork, setSelectedArtwork] = useState<Artwork | null>(null)
+  const [selectedItemForPreview, setSelectedItemForPreview] = useState<Artwork | null>(null)
   const [heroArtwork, setHeroArtwork] = useState<Artwork>(artworks[0])
 
   const openModal = (artwork: Artwork) => setSelectedArtwork(artwork)
   const closeModal = () => setSelectedArtwork(null)
+  const openItemPreview = (artwork: Artwork) => setSelectedItemForPreview(artwork)
+  const closeItemPreview = () => setSelectedItemForPreview(null)
 
-  const selectHeroArtwork = (artwork: Artwork) => {
+  const selectHeroArtwork = (artwork: Artwork, options?: { scrollToGallery?: boolean }) => {
     setHeroArtwork(artwork)
-    // MODIFICATION: Scroll to the gallery's featured section
-    document.getElementById('gallery-featured-section')?.scrollIntoView({
-      behavior: 'smooth',
-      block: 'start',
-    })
+    const shouldScroll = options?.scrollToGallery ?? true
+    if (shouldScroll) {
+      // Keep gallery thumbnail behavior, but let Hero controls skip this scroll.
+      document.getElementById('gallery-featured-section')?.scrollIntoView({
+        behavior: 'smooth',
+        block: 'start',
+      })
+    }
   }
 
   return (
-    <ArtworkModalContext.Provider value={{ selectedArtwork, openModal, closeModal, heroArtwork, selectHeroArtwork }}>
+    <ArtworkModalContext.Provider
+      value={{
+        selectedArtwork,
+        openModal,
+        closeModal,
+        selectedItemForPreview,
+        openItemPreview,
+        closeItemPreview,
+        heroArtwork,
+        selectHeroArtwork,
+      }}
+    >
       {children}
     </ArtworkModalContext.Provider>
   )
